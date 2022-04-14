@@ -162,6 +162,7 @@ private:
         ptr = (void *)sycl::malloc_device( buffer_size, dpct::get_default_queue());
         auto ret_val = std::unique_ptr<char, void (*)(char *)>(
             static_cast<char *>(ptr), [](char *ptr) {
+                                                              try {    
                                                                   sycl::free(ptr,dpct::get_default_queue());
                                                               }
                                                               catch (sycl::exception const &exc) {
