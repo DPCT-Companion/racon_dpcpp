@@ -1,0 +1,64 @@
+CC := dpcpp
+
+LD := $(CC)
+
+#DPCT2001:210: You can link with more library by add them here.
+LIB := 
+
+FLAGS := 
+
+TARGET_0_SRC_0 = ./build/_deps/googletest-src/googletest/src/gtest_main.cc
+TARGET_0_OBJ_0 = ./build/_deps/googletest-src/googletest/src/gtest_main.o
+TARGET_0_FLAG_0 = -O3 -DNDEBUG -DGTEST_HAS_PTHREAD=1 -std=c++11 -DTHRUST_IGNORE_CUB_VERSION_CHECK=1 ${FLAGS}
+
+TARGET_1_SRC_0 = ./src/main.cpp
+TARGET_1_OBJ_0 = ./src/main.o
+TARGET_1_FLAG_0 = -DCUDA_ENABLED -DGW_ENABLE_CACHING_ALLOCATOR -DVERSION="1.5.0" -I./src -I./build/_deps/bioparser-src/include -I./build/_deps/edlib-src/edlib/include -I./build/_deps/spoa-src/include -I./build/_deps/thread_pool-src/include -I./build/_deps/genomeworks-src/cudapoa/include -I./build/_deps/genomeworks-src/common/base/include -I./build/_deps/genomeworks-src/3rdparty/spdlog/include -I./build/_deps/genomeworks-src/common/io/include -I./build/_deps/genomeworks-src/cudaaligner/include -O3 -DNDEBUG -std=c++11 -DTHRUST_IGNORE_CUB_VERSION_CHECK=1 ${FLAGS}
+
+TARGET_2_SRC_0 = ./test/racon_test.cpp
+TARGET_2_OBJ_0 = ./test/racon_test.o
+TARGET_2_FLAG_0 = -DCUDA_ENABLED -DGW_ENABLE_CACHING_ALLOCATOR -DTEST_DATA="/home/tianchen/racon/test/data/" -I./src -I./build/_deps/bioparser-src/include -I./build/_deps/edlib-src/edlib/include -I./build/_deps/spoa-src/include -I./build/_deps/thread_pool-src/include -I./build/_deps/genomeworks-src/cudapoa/include -I./build/_deps/genomeworks-src/common/base/include -I./build/_deps/genomeworks-src/3rdparty/spdlog/include -I./build/_deps/genomeworks-src/common/io/include -I./build/_deps/genomeworks-src/cudaaligner/include -O3 -DNDEBUG -std=c++11 -DTHRUST_IGNORE_CUB_VERSION_CHECK=1 ${FLAGS}
+
+TARGET_3_SRC_0 = ./build/_deps/genomeworks-build/detect_cuda_compute_capabilities.cpp.dp.cpp
+TARGET_3_OBJ_0 = ./build/_deps/genomeworks-build/detect_cuda_compute_capabilities.cpp.dp.o
+TARGET_3_FLAG_0 = -std=c++17 -DTHRUST_IGNORE_CUB_VERSION_CHECK=1 ${FLAGS}
+
+TARGET_0 := 
+TARGET_1 := bin/racon
+TARGET_2 := bin/racon_test
+TARGET_3 := cmTC_9c4c4
+
+TARGET :=  ${TARGET_0} ${TARGET_1} ${TARGET_2} ${TARGET_3}
+
+.PHONY:all clean
+OBJS_0 :=  ${TARGET_0_OBJ_0}
+OBJS_1 :=  ${TARGET_1_OBJ_0}
+OBJS_2 :=  ${TARGET_2_OBJ_0}
+OBJS_3 :=  ${TARGET_3_OBJ_0}
+all: $(TARGET)
+$(TARGET_0): $(OBJS_0)
+	$(LD) -o $@ $^ $(LIB) 
+
+$(TARGET_0_OBJ_0):$(TARGET_0_SRC_0)
+	c++ -c ${TARGET_0_SRC_0} -o ${TARGET_0_OBJ_0} $(TARGET_0_FLAG_0)
+
+$(TARGET_1): $(OBJS_1)
+	$(LD) -o $@ $^ $(LIB) 
+
+$(TARGET_1_OBJ_0):$(TARGET_1_SRC_0)
+	c++ -c ${TARGET_1_SRC_0} -o ${TARGET_1_OBJ_0} $(TARGET_1_FLAG_0)
+
+$(TARGET_2): $(OBJS_2)
+	$(LD) -o $@ $^ $(LIB) 
+
+$(TARGET_2_OBJ_0):$(TARGET_2_SRC_0)
+	c++ -c ${TARGET_2_SRC_0} -o ${TARGET_2_OBJ_0} $(TARGET_2_FLAG_0)
+
+$(TARGET_3): $(OBJS_3)
+	$(LD) -o $@ $^ $(LIB) 
+
+$(TARGET_3_OBJ_0):$(TARGET_3_SRC_0)
+	c++ -c ${TARGET_3_SRC_0} -o ${TARGET_3_OBJ_0} $(TARGET_3_FLAG_0)
+
+clean:
+	rm -f  ${OBJS_0} ${OBJS_1} ${OBJS_2} ${OBJS_3} $(TARGET)

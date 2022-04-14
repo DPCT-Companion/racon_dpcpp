@@ -1,0 +1,1019 @@
+---
+MainSourceFile:  '/home/tianchen/racon/build/dpcpp/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.dp.hpp'
+Replacements:
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          609
+    Length:          0
+    ReplacementText: "#include <CL/sycl.hpp>\n#include <dpct/dpct.hpp>\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          639
+    Length:          30
+    ReplacementText: '#include "cudapoa_kernels.dp.hpp"'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          1030
+    Length:          30
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          1544
+    Length:          12
+    ReplacementText: 'sycl::queue'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          1557
+    Length:          0
+    ReplacementText: '*'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          5428
+    Length:          0
+    ReplacementText: "        /*\n        DPCT1003:193: Migrated API does not return error code. (*, 0) is inserted. You may need to rewrite this code.\n        */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          5452
+    Length:          15
+    ReplacementText: '(stream_->memcpy'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          5628
+    Length:          24
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          5652
+    Length:          9
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          5662
+    Length:          0
+    ReplacementText: ', 0)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          5665
+    Length:          0
+    ReplacementText: "        /*\n        DPCT1003:194: Migrated API does not return error code. (*, 0) is inserted. You may need to rewrite this code.\n        */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          5689
+    Length:          15
+    ReplacementText: '(stream_->memcpy'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          5874
+    Length:          24
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          5898
+    Length:          9
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          5908
+    Length:          0
+    ReplacementText: ', 0)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          5911
+    Length:          0
+    ReplacementText: "        /*\n        DPCT1003:195: Migrated API does not return error code. (*, 0) is inserted. You may need to rewrite this code.\n        */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          5935
+    Length:          15
+    ReplacementText: '(stream_->memcpy'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          6113
+    Length:          24
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          6137
+    Length:          9
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          6147
+    Length:          0
+    ReplacementText: ', 0)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          6150
+    Length:          0
+    ReplacementText: "        /*\n        DPCT1003:196: Migrated API does not return error code. (*, 0) is inserted. You may need to rewrite this code.\n        */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          6174
+    Length:          15
+    ReplacementText: '(stream_->memcpy'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          6368
+    Length:          24
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          6392
+    Length:          9
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          6402
+    Length:          0
+    ReplacementText: ', 0)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          7990
+    Length:          0
+    ReplacementText: "        /*\n        DPCT1003:197: Migrated API does not return error code. (*, 0) is inserted. You may need to rewrite this code.\n        */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          8014
+    Length:          15
+    ReplacementText: '(stream_->memcpy'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          8252
+    Length:          64
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          8316
+    Length:          49
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          8366
+    Length:          0
+    ReplacementText: ', 0)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          8369
+    Length:          0
+    ReplacementText: "        /*\n        DPCT1003:198: Migrated API does not return error code. (*, 0) is inserted. You may need to rewrite this code.\n        */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          8393
+    Length:          15
+    ReplacementText: '(stream_->memcpy'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          8628
+    Length:          64
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          8692
+    Length:          49
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          8742
+    Length:          0
+    ReplacementText: ', 0)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          8745
+    Length:          0
+    ReplacementText: "        /*\n        DPCT1003:199: Migrated API does not return error code. (*, 0) is inserted. You may need to rewrite this code.\n        */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          8769
+    Length:          30
+    ReplacementText: '(stream_->wait(), 0)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          11085
+    Length:          0
+    ReplacementText: "        /*\n        DPCT1003:200: Migrated API does not return error code. (*, 0) is inserted. You may need to rewrite this code.\n        */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          11109
+    Length:          15
+    ReplacementText: '(stream_->memcpy'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          11429
+    Length:          64
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          11493
+    Length:          49
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          11543
+    Length:          0
+    ReplacementText: ', 0)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          11547
+    Length:          0
+    ReplacementText: "        /*\n        DPCT1003:201: Migrated API does not return error code. (*, 0) is inserted. You may need to rewrite this code.\n        */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          11571
+    Length:          15
+    ReplacementText: '(stream_->memcpy'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          11809
+    Length:          64
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          11873
+    Length:          49
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          11923
+    Length:          0
+    ReplacementText: ', 0)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          11927
+    Length:          0
+    ReplacementText: "        /*\n        DPCT1003:202: Migrated API does not return error code. (*, 0) is inserted. You may need to rewrite this code.\n        */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          11951
+    Length:          30
+    ReplacementText: '(stream_->wait(), 0)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          13543
+    Length:          0
+    ReplacementText: "        /*\n        DPCT1003:203: Migrated API does not return error code. (*, 0) is inserted. You may need to rewrite this code.\n        */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          13567
+    Length:          15
+    ReplacementText: '(stream_->memcpy'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          13781
+    Length:          64
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          13845
+    Length:          49
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          13895
+    Length:          0
+    ReplacementText: ', 0)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          13899
+    Length:          0
+    ReplacementText: "        /*\n        DPCT1003:204: Migrated API does not return error code. (*, 0) is inserted. You may need to rewrite this code.\n        */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          13923
+    Length:          15
+    ReplacementText: '(stream_->memcpy'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          14189
+    Length:          64
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          14253
+    Length:          49
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          14303
+    Length:          0
+    ReplacementText: ', 0)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          14307
+    Length:          0
+    ReplacementText: "        /*\n        DPCT1003:205: Migrated API does not return error code. (*, 0) is inserted. You may need to rewrite this code.\n        */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          14331
+    Length:          15
+    ReplacementText: '(stream_->memcpy'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          14618
+    Length:          64
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          14682
+    Length:          49
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          14732
+    Length:          0
+    ReplacementText: ', 0)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          14736
+    Length:          0
+    ReplacementText: "        /*\n        DPCT1003:206: Migrated API does not return error code. (*, 0) is inserted. You may need to rewrite this code.\n        */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          14760
+    Length:          15
+    ReplacementText: '(stream_->memcpy'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          15016
+    Length:          64
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          15080
+    Length:          49
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          15130
+    Length:          0
+    ReplacementText: ', 0)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          15134
+    Length:          0
+    ReplacementText: "        /*\n        DPCT1003:207: Migrated API does not return error code. (*, 0) is inserted. You may need to rewrite this code.\n        */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          15158
+    Length:          15
+    ReplacementText: '(stream_->memcpy'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          15392
+    Length:          64
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          15456
+    Length:          49
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          15506
+    Length:          0
+    ReplacementText: ', 0)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          15510
+    Length:          0
+    ReplacementText: "        /*\n        DPCT1003:208: Migrated API does not return error code. (*, 0) is inserted. You may need to rewrite this code.\n        */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          15534
+    Length:          15
+    ReplacementText: '(stream_->memcpy'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          15772
+    Length:          64
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          15836
+    Length:          49
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          15886
+    Length:          0
+    ReplacementText: ', 0)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          15968
+    Length:          0
+    ReplacementText: "        /*\n        DPCT1003:209: Migrated API does not return error code. (*, 0) is inserted. You may need to rewrite this code.\n        */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          15992
+    Length:          30
+    ReplacementText: '(stream_->wait(), 0)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          25355
+    Length:          12
+    ReplacementText: 'sycl::queue'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+    Offset:          25368
+    Length:          0
+    ReplacementText: '*'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+DpctVersion:     2022.0.0
+MainHelperFileName: dpct
+USMLevel:        ''
+FeatureMap:
+  device.hpp:
+    dev_mgr:
+      IsCalled:        false
+      FeatureName:     ''
+      SubFeatureMap:
+        dev_mgr_current_device_id:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/tianchen/racon/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/cudautils.hpp'
+          FeatureName:     'dev_mgr::current_device_id'
+          SubFeatureMap:   {}
+        dev_mgr_device_count:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/tianchen/racon/build/_deps/genomeworks-build/detect_cuda_compute_capabilities.cpp'
+            - '/home/tianchen/racon/src/cuda/cudapolisher.cpp'
+          FeatureName:     'dev_mgr::device_count'
+          SubFeatureMap:   {}
+        dev_mgr_get_device:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/tianchen/racon/build/_deps/genomeworks-build/detect_cuda_compute_capabilities.cpp'
+          FeatureName:     'dev_mgr::get_device'
+          SubFeatureMap:   {}
+        dev_mgr_select_device:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/tianchen/racon/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/cudautils.hpp'
+            - '/home/tianchen/racon/src/cuda/cudaaligner.cpp'
+            - '/home/tianchen/racon/src/cuda/cudapolisher.cpp'
+          FeatureName:     'dev_mgr::select_device'
+          SubFeatureMap:   {}
+    device_ext:
+      IsCalled:        false
+      FeatureName:     ''
+      SubFeatureMap:
+        device_ext_create_queue:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/src/myers_gpu.cu'
+            - '/home/tianchen/racon/src/cuda/cudaaligner.cpp'
+            - '/home/tianchen/racon/src/cuda/cudabatch.cpp'
+          FeatureName:     'device_ext::create_queue'
+          SubFeatureMap:   {}
+        device_ext_destroy_queue:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/src/myers_gpu.cu'
+            - '/home/tianchen/racon/src/cuda/cudaaligner.cpp'
+            - '/home/tianchen/racon/src/cuda/cudabatch.cpp'
+          FeatureName:     'device_ext::destroy_queue'
+          SubFeatureMap:   {}
+        device_ext_get_device_info_return_info:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/tianchen/racon/build/_deps/genomeworks-build/detect_cuda_compute_capabilities.cpp'
+            - '/home/tianchen/racon/build/_deps/genomeworks-src/common/base/src/cudautils.cpp'
+            - '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/allocate_block.hpp'
+            - '/home/tianchen/racon/src/cuda/cudapolisher.cpp'
+          FeatureName:     'device_ext::get_device_info'
+          SubFeatureMap:   {}
+        device_ext_queues_wait_and_throw:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/tianchen/racon/src/cuda/cudapolisher.cpp'
+          FeatureName:     'device_ext::queues_wait_and_throw'
+          SubFeatureMap:   {}
+    device_info:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/tianchen/racon/build/_deps/genomeworks-build/detect_cuda_compute_capabilities.cpp'
+      FeatureName:     device_info
+      SubFeatureMap:
+        device_info_get_global_mem_size:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/tianchen/racon/build/_deps/genomeworks-src/common/base/src/cudautils.cpp'
+            - '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/allocate_block.hpp'
+            - '/home/tianchen/racon/src/cuda/cudapolisher.cpp'
+          FeatureName:     'device_info::get_global_mem_size'
+          SubFeatureMap:   {}
+        device_info_get_major_version:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/tianchen/racon/build/_deps/genomeworks-build/detect_cuda_compute_capabilities.cpp'
+          FeatureName:     'device_info::get_major_version'
+          SubFeatureMap:   {}
+        device_info_get_minor_version:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/tianchen/racon/build/_deps/genomeworks-build/detect_cuda_compute_capabilities.cpp'
+          FeatureName:     'device_info::get_minor_version'
+          SubFeatureMap:   {}
+    get_current_device:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/common/base/src/cudautils.cpp'
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/src/myers_gpu.cu'
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/allocate_block.hpp'
+        - '/home/tianchen/racon/src/cuda/cudaaligner.cpp'
+        - '/home/tianchen/racon/src/cuda/cudabatch.cpp'
+        - '/home/tianchen/racon/src/cuda/cudapolisher.cpp'
+      FeatureName:     get_current_device
+      SubFeatureMap:   {}
+    get_default_queue:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/allocator.hpp'
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/cudautils.hpp'
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/device_preallocated_allocator.cuh'
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/common/base/src/cudautils.cpp'
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/allocate_block.hpp'
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_add_alignment.cuh'
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_generate_consensus.cuh'
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_nw.cuh'
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_topsort.cuh'
+        - '/home/tianchen/racon/src/cuda/cudapolisher.cpp'
+      FeatureName:     get_default_queue
+      SubFeatureMap:   {}
+  dpct.hpp:
+    dpct_align_and_inline:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/cudautils.hpp'
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_nw.cuh'
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_structs.cuh'
+      FeatureName:     '__dpct_align__(n) and __dpct_inline__'
+      SubFeatureMap:   {}
+    dpct_compatibility_temp:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/mathutils.hpp'
+      FeatureName:     DPCT_COMPATIBILITY_TEMP
+      SubFeatureMap:   {}
+  dpl_utils.hpp:
+    non_local_include_dependency:
+      IsCalled:        true
+      CallerSrcFiles:
+        - ''
+      FeatureName:     ''
+      SubFeatureMap:   {}
+  memory.hpp:
+    async_dpct_memcpy:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/cudautils.hpp'
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/src/aligner_global.cpp'
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/src/myers_gpu.cu'
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+      FeatureName:     async_dpct_memcpy
+      SubFeatureMap:   {}
+    async_dpct_memcpy_2d:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/cudautils.hpp'
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/src/aligner_global.cpp'
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/src/myers_gpu.cu'
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+      FeatureName:     async_dpct_memcpy
+      SubFeatureMap:   {}
+    async_dpct_memcpy_3d:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/cudautils.hpp'
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/src/aligner_global.cpp'
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/src/myers_gpu.cu'
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+      FeatureName:     async_dpct_memcpy
+      SubFeatureMap:   {}
+    async_dpct_memset:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/src/aligner_global.cpp'
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/src/batched_device_matrices.cuh'
+      FeatureName:     async_dpct_memset
+      SubFeatureMap:   {}
+    async_dpct_memset_2d:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/src/aligner_global.cpp'
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/src/batched_device_matrices.cuh'
+      FeatureName:     async_dpct_memset
+      SubFeatureMap:   {}
+    async_dpct_memset_3d:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/src/aligner_global.cpp'
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/src/batched_device_matrices.cuh'
+      FeatureName:     async_dpct_memset
+      SubFeatureMap:   {}
+    dpct_memcpy:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/cudautils.hpp'
+      FeatureName:     dpct_memcpy
+      SubFeatureMap:   {}
+    dpct_memcpy_2d:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/cudautils.hpp'
+      FeatureName:     dpct_memcpy
+      SubFeatureMap:   {}
+    dpct_memcpy_3d:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/cudautils.hpp'
+      FeatureName:     dpct_memcpy
+      SubFeatureMap:   {}
+    memcpy_direction:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/cudautils.hpp'
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/src/aligner_global.cpp'
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/src/myers_gpu.cu'
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+      FeatureName:     memcpy_direction
+      SubFeatureMap:   {}
+CompileTargets:  {}
+OptionMap:
+  AsyncHandler:
+    Value:           'false'
+    Specified:       false
+  CommentsEnabled:
+    Value:           'false'
+    Specified:       false
+  CompilationsDir:
+    Value:           '/home/tianchen/racon/build'
+    Specified:       true
+  CtadEnabled:
+    Value:           'false'
+    Specified:       false
+  CustomHelperFileName:
+    Value:           dpct
+    Specified:       false
+  ExperimentalFlag:
+    Value:           '0'
+    Specified:       false
+  ExplicitClNamespace:
+    Value:           'false'
+    Specified:       false
+  ExplicitNamespace:
+    Value:           '20'
+    Specified:       false
+  ExtensionFlag:
+    Value:           '4294967295'
+    Specified:       false
+  NDRangeDim:
+    Value:           '3'
+    Specified:       false
+  NoDRYPattern:
+    Value:           'false'
+    Specified:       false
+  OptimizeMigration:
+    Value:           'false'
+    Specified:       false
+  ProcessAll:
+    Value:           'false'
+    Specified:       false
+  SyclNamedLambda:
+    Value:           'false'
+    Specified:       false
+  UsmLevel:
+    Value:           '1'
+    Specified:       false
+...

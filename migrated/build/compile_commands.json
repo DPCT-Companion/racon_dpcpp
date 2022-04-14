@@ -1,0 +1,255 @@
+[
+    {
+        "command": "c++ -c -I/usr/local/cuda-11.4/include -Wall -Wextra -pedantic -fopenmp -std=c++17 -o CMakeFiles/cmTC_9c4c4.dir/detect_cuda_compute_capabilities.cpp.o /home/tianchen/racon/build/_deps/genomeworks-build/detect_cuda_compute_capabilities.cpp",
+        "directory": "/home/tianchen/racon/build/_deps/genomeworks-build/CMakeFiles/CMakeTmp",
+        "file": "/home/tianchen/racon/build/_deps/genomeworks-build/detect_cuda_compute_capabilities.cpp"
+    },
+    {
+        "command": "ld -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/cciuJWSw.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -melf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_9c4c4 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o /usr/lib/gcc/x86_64-linux-gnu/9/crtoffloadbegin.o CMakeFiles/cmTC_9c4c4.dir/detect_cuda_compute_capabilities.cpp.o /usr/local/cuda-11.4/lib64/libcudart_static.a /usr/lib/x86_64-linux-gnu/librt.so /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o /usr/lib/gcc/x86_64-linux-gnu/9/crtoffloadend.o",
+        "directory": "/home/tianchen/racon/build/_deps/genomeworks-build/CMakeFiles/CMakeTmp"
+    },
+    {
+        "command": "c++ -c -DGW_ENABLE_CACHING_ALLOCATOR -I/opt/intel/oneapi/intelpython/latest/include -I/home/tianchen/racon/build/_deps/genomeworks-src/common/base/include -I/usr/local/cuda-11.4/include -I/home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/spdlog/include -Wall -Wextra -pedantic -fopenmp -O3 -DNDEBUG -std=c++17 -o CMakeFiles/gwbase.dir/src/cudautils.cpp.o /home/tianchen/racon/build/_deps/genomeworks-src/common/base/src/cudautils.cpp",
+        "directory": "/home/tianchen/racon/build/_deps/genomeworks-build/common/base",
+        "file": "/home/tianchen/racon/build/_deps/genomeworks-src/common/base/src/cudautils.cpp"
+    },
+    {
+        "command": "c++ -c -DGW_ENABLE_CACHING_ALLOCATOR -I/opt/intel/oneapi/intelpython/latest/include -I/home/tianchen/racon/build/_deps/genomeworks-src/common/base/include -I/usr/local/cuda-11.4/include -I/home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/spdlog/include -Wall -Wextra -pedantic -fopenmp -O3 -DNDEBUG -std=c++17 -o CMakeFiles/gwbase.dir/src/logging.cpp.o /home/tianchen/racon/build/_deps/genomeworks-src/common/base/src/logging.cpp",
+        "directory": "/home/tianchen/racon/build/_deps/genomeworks-build/common/base",
+        "file": "/home/tianchen/racon/build/_deps/genomeworks-src/common/base/src/logging.cpp"
+    },
+    {
+        "command": "c++ -c -DGW_ENABLE_CACHING_ALLOCATOR -I/opt/intel/oneapi/intelpython/latest/include -I/home/tianchen/racon/build/_deps/genomeworks-src/common/base/include -I/usr/local/cuda-11.4/include -I/home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/spdlog/include -Wall -Wextra -pedantic -fopenmp -O3 -DNDEBUG -std=c++17 -o CMakeFiles/gwbase.dir/src/graph.cpp.o /home/tianchen/racon/build/_deps/genomeworks-src/common/base/src/graph.cpp",
+        "directory": "/home/tianchen/racon/build/_deps/genomeworks-build/common/base",
+        "file": "/home/tianchen/racon/build/_deps/genomeworks-src/common/base/src/graph.cpp"
+    },
+    {
+        "command": "ar qc ../../../../lib/libgwbase.a CMakeFiles/gwbase.dir/src/cudautils.cpp.o CMakeFiles/gwbase.dir/src/logging.cpp.o CMakeFiles/gwbase.dir/src/graph.cpp.o",
+        "directory": "/home/tianchen/racon/build/_deps/genomeworks-build/common/base"
+    },
+    {
+        "command": "nvcc -c  -o /home/tianchen/racon/build/_deps/genomeworks-build/cudaaligner/CMakeFiles/cudaaligner.dir/src/./cudaaligner_generated_hirschberg_myers_gpu.cu.o -m64 -DGW_ENABLE_CACHING_ALLOCATOR -Wall -Wextra -pedantic -fopenmp -O3 -DNDEBUG -Wall -Wno-pedantic -std=c++14 -DNVCC -I/usr/local/cuda-11.4/include -I/opt/intel/oneapi/intelpython/latest/include -I/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/include -I/home/tianchen/racon/build/_deps/genomeworks-src/common/base/include -I/home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/spdlog/include -I/home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/cub -D__CUDACC__=1 /home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/src/hirschberg_myers_gpu.cu",
+        "directory": "/home/tianchen/racon/build/_deps/genomeworks-build/cudaaligner/CMakeFiles/cudaaligner.dir/src",
+        "file": "/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/src/hirschberg_myers_gpu.cu"
+    },
+    {
+        "command": "nvcc -c  -o /home/tianchen/racon/build/_deps/genomeworks-build/cudaaligner/CMakeFiles/cudaaligner.dir/src/./cudaaligner_generated_ukkonen_gpu.cu.o -m64 -DGW_ENABLE_CACHING_ALLOCATOR -Wall -Wextra -pedantic -fopenmp -O3 -DNDEBUG -Wall -Wno-pedantic -std=c++14 -DNVCC -I/usr/local/cuda-11.4/include -I/opt/intel/oneapi/intelpython/latest/include -I/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/include -I/home/tianchen/racon/build/_deps/genomeworks-src/common/base/include -I/home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/spdlog/include -I/home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/cub -D__CUDACC__=1 /home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/src/ukkonen_gpu.cu",
+        "directory": "/home/tianchen/racon/build/_deps/genomeworks-build/cudaaligner/CMakeFiles/cudaaligner.dir/src",
+        "file": "/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/src/ukkonen_gpu.cu"
+    },
+    {
+        "command": "nvcc -c  -o /home/tianchen/racon/build/_deps/genomeworks-build/cudaaligner/CMakeFiles/cudaaligner.dir/src/./cudaaligner_generated_myers_gpu.cu.o -m64 -DGW_ENABLE_CACHING_ALLOCATOR -Wall -Wextra -pedantic -fopenmp -O3 -DNDEBUG -Wall -Wno-pedantic -std=c++14 -DNVCC -I/usr/local/cuda-11.4/include -I/opt/intel/oneapi/intelpython/latest/include -I/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/include -I/home/tianchen/racon/build/_deps/genomeworks-src/common/base/include -I/home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/spdlog/include -I/home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/cub -D__CUDACC__=1 /home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/src/myers_gpu.cu",
+        "directory": "/home/tianchen/racon/build/_deps/genomeworks-build/cudaaligner/CMakeFiles/cudaaligner.dir/src",
+        "file": "/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/src/myers_gpu.cu"
+    },
+    {
+        "command": "c++ -c -DGW_ENABLE_CACHING_ALLOCATOR -I/opt/intel/oneapi/intelpython/latest/include -I/usr/local/cuda-11.4/include -I/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/include -I/home/tianchen/racon/build/_deps/genomeworks-src/common/base/include -I/home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/spdlog/include -isystem /home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/cub -Wall -Wextra -pedantic -fopenmp -O3 -DNDEBUG -Wextra -std=c++17 -o CMakeFiles/cudaaligner.dir/src/cudaaligner.cpp.o /home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/src/cudaaligner.cpp",
+        "directory": "/home/tianchen/racon/build/_deps/genomeworks-build/cudaaligner",
+        "file": "/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/src/cudaaligner.cpp"
+    },
+    {
+        "command": "c++ -c -DGW_ENABLE_CACHING_ALLOCATOR -I/opt/intel/oneapi/intelpython/latest/include -I/usr/local/cuda-11.4/include -I/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/include -I/home/tianchen/racon/build/_deps/genomeworks-src/common/base/include -I/home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/spdlog/include -isystem /home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/cub -Wall -Wextra -pedantic -fopenmp -O3 -DNDEBUG -Wextra -std=c++17 -o CMakeFiles/cudaaligner.dir/src/aligner.cpp.o /home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/src/aligner.cpp",
+        "directory": "/home/tianchen/racon/build/_deps/genomeworks-build/cudaaligner",
+        "file": "/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/src/aligner.cpp"
+    },
+    {
+        "command": "c++ -c -DGW_ENABLE_CACHING_ALLOCATOR -I/opt/intel/oneapi/intelpython/latest/include -I/usr/local/cuda-11.4/include -I/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/include -I/home/tianchen/racon/build/_deps/genomeworks-src/common/base/include -I/home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/spdlog/include -isystem /home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/cub -Wall -Wextra -pedantic -fopenmp -O3 -DNDEBUG -Wextra -std=c++17 -o CMakeFiles/cudaaligner.dir/src/alignment.cpp.o /home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/src/alignment.cpp",
+        "directory": "/home/tianchen/racon/build/_deps/genomeworks-build/cudaaligner",
+        "file": "/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/src/alignment.cpp"
+    },
+    {
+        "command": "c++ -c -DGW_ENABLE_CACHING_ALLOCATOR -I/opt/intel/oneapi/intelpython/latest/include -I/usr/local/cuda-11.4/include -I/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/include -I/home/tianchen/racon/build/_deps/genomeworks-src/common/base/include -I/home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/spdlog/include -isystem /home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/cub -Wall -Wextra -pedantic -fopenmp -O3 -DNDEBUG -Wextra -std=c++17 -o CMakeFiles/cudaaligner.dir/src/alignment_impl.cpp.o /home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/src/alignment_impl.cpp",
+        "directory": "/home/tianchen/racon/build/_deps/genomeworks-build/cudaaligner",
+        "file": "/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/src/alignment_impl.cpp"
+    },
+    {
+        "command": "c++ -c -DGW_ENABLE_CACHING_ALLOCATOR -I/opt/intel/oneapi/intelpython/latest/include -I/usr/local/cuda-11.4/include -I/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/include -I/home/tianchen/racon/build/_deps/genomeworks-src/common/base/include -I/home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/spdlog/include -isystem /home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/cub -Wall -Wextra -pedantic -fopenmp -O3 -DNDEBUG -Wextra -std=c++17 -o CMakeFiles/cudaaligner.dir/src/aligner_global.cpp.o /home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/src/aligner_global.cpp",
+        "directory": "/home/tianchen/racon/build/_deps/genomeworks-build/cudaaligner",
+        "file": "/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/src/aligner_global.cpp"
+    },
+    {
+        "command": "c++ -c -DGW_ENABLE_CACHING_ALLOCATOR -I/opt/intel/oneapi/intelpython/latest/include -I/usr/local/cuda-11.4/include -I/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/include -I/home/tianchen/racon/build/_deps/genomeworks-src/common/base/include -I/home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/spdlog/include -isystem /home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/cub -Wall -Wextra -pedantic -fopenmp -O3 -DNDEBUG -Wextra -std=c++17 -o CMakeFiles/cudaaligner.dir/src/aligner_global_ukkonen.cpp.o /home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/src/aligner_global_ukkonen.cpp",
+        "directory": "/home/tianchen/racon/build/_deps/genomeworks-build/cudaaligner",
+        "file": "/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/src/aligner_global_ukkonen.cpp"
+    },
+    {
+        "command": "c++ -c -DGW_ENABLE_CACHING_ALLOCATOR -I/opt/intel/oneapi/intelpython/latest/include -I/usr/local/cuda-11.4/include -I/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/include -I/home/tianchen/racon/build/_deps/genomeworks-src/common/base/include -I/home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/spdlog/include -isystem /home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/cub -Wall -Wextra -pedantic -fopenmp -O3 -DNDEBUG -Wextra -std=c++17 -o CMakeFiles/cudaaligner.dir/src/aligner_global_myers.cpp.o /home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/src/aligner_global_myers.cpp",
+        "directory": "/home/tianchen/racon/build/_deps/genomeworks-build/cudaaligner",
+        "file": "/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/src/aligner_global_myers.cpp"
+    },
+    {
+        "command": "c++ -c -DGW_ENABLE_CACHING_ALLOCATOR -I/opt/intel/oneapi/intelpython/latest/include -I/usr/local/cuda-11.4/include -I/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/include -I/home/tianchen/racon/build/_deps/genomeworks-src/common/base/include -I/home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/spdlog/include -isystem /home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/cub -Wall -Wextra -pedantic -fopenmp -O3 -DNDEBUG -Wextra -std=c++17 -o CMakeFiles/cudaaligner.dir/src/aligner_global_myers_banded.cpp.o /home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/src/aligner_global_myers_banded.cpp",
+        "directory": "/home/tianchen/racon/build/_deps/genomeworks-build/cudaaligner",
+        "file": "/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/src/aligner_global_myers_banded.cpp"
+    },
+    {
+        "command": "c++ -c -DGW_ENABLE_CACHING_ALLOCATOR -I/opt/intel/oneapi/intelpython/latest/include -I/usr/local/cuda-11.4/include -I/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/include -I/home/tianchen/racon/build/_deps/genomeworks-src/common/base/include -I/home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/spdlog/include -isystem /home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/cub -Wall -Wextra -pedantic -fopenmp -O3 -DNDEBUG -Wextra -std=c++17 -o CMakeFiles/cudaaligner.dir/src/aligner_global_hirschberg_myers.cpp.o /home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/src/aligner_global_hirschberg_myers.cpp",
+        "directory": "/home/tianchen/racon/build/_deps/genomeworks-build/cudaaligner",
+        "file": "/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/src/aligner_global_hirschberg_myers.cpp"
+    },
+    {
+        "command": "c++ -c -DGW_ENABLE_CACHING_ALLOCATOR -I/opt/intel/oneapi/intelpython/latest/include -I/usr/local/cuda-11.4/include -I/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/include -I/home/tianchen/racon/build/_deps/genomeworks-src/common/base/include -I/home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/spdlog/include -isystem /home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/cub -Wall -Wextra -pedantic -fopenmp -O3 -DNDEBUG -Wextra -std=c++17 -o CMakeFiles/cudaaligner.dir/src/needleman_wunsch_cpu.cpp.o /home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/src/needleman_wunsch_cpu.cpp",
+        "directory": "/home/tianchen/racon/build/_deps/genomeworks-build/cudaaligner",
+        "file": "/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/src/needleman_wunsch_cpu.cpp"
+    },
+    {
+        "command": "c++ -c -DGW_ENABLE_CACHING_ALLOCATOR -I/opt/intel/oneapi/intelpython/latest/include -I/usr/local/cuda-11.4/include -I/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/include -I/home/tianchen/racon/build/_deps/genomeworks-src/common/base/include -I/home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/spdlog/include -isystem /home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/cub -Wall -Wextra -pedantic -fopenmp -O3 -DNDEBUG -Wextra -std=c++17 -o CMakeFiles/cudaaligner.dir/src/ukkonen_cpu.cpp.o /home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/src/ukkonen_cpu.cpp",
+        "directory": "/home/tianchen/racon/build/_deps/genomeworks-build/cudaaligner",
+        "file": "/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/src/ukkonen_cpu.cpp"
+    },
+    {
+        "command": "ar qc ../../../lib/libcudaaligner.a CMakeFiles/cudaaligner.dir/src/cudaaligner.cpp.o CMakeFiles/cudaaligner.dir/src/aligner.cpp.o CMakeFiles/cudaaligner.dir/src/alignment.cpp.o CMakeFiles/cudaaligner.dir/src/alignment_impl.cpp.o CMakeFiles/cudaaligner.dir/src/aligner_global.cpp.o CMakeFiles/cudaaligner.dir/src/aligner_global_ukkonen.cpp.o CMakeFiles/cudaaligner.dir/src/aligner_global_myers.cpp.o CMakeFiles/cudaaligner.dir/src/aligner_global_myers_banded.cpp.o CMakeFiles/cudaaligner.dir/src/aligner_global_hirschberg_myers.cpp.o CMakeFiles/cudaaligner.dir/src/needleman_wunsch_cpu.cpp.o CMakeFiles/cudaaligner.dir/src/ukkonen_cpu.cpp.o CMakeFiles/cudaaligner.dir/src/cudaaligner_generated_ukkonen_gpu.cu.o CMakeFiles/cudaaligner.dir/src/cudaaligner_generated_myers_gpu.cu.o CMakeFiles/cudaaligner.dir/src/cudaaligner_generated_hirschberg_myers_gpu.cu.o",
+        "directory": "/home/tianchen/racon/build/_deps/genomeworks-build/cudaaligner"
+    },
+    {
+        "command": "c++ -c -DDLIB_BUILD -I/home/tianchen/racon/build/_deps/edlib-src/edlib/include -Wall -Wextra -pedantic -Wold-style-cast -Wshadow -Wall -Wextra -pedantic -O3 -DNDEBUG -std=c++14 -o CMakeFiles/edlib.dir/edlib/src/edlib.cpp.o /home/tianchen/racon/build/_deps/edlib-src/edlib/src/edlib.cpp",
+        "directory": "/home/tianchen/racon/build/_deps/edlib-build",
+        "file": "/home/tianchen/racon/build/_deps/edlib-src/edlib/src/edlib.cpp"
+    },
+    {
+        "command": "ar qc ../../lib/libedlib.a CMakeFiles/edlib.dir/edlib/src/edlib.cpp.o",
+        "directory": "/home/tianchen/racon/build/_deps/edlib-build"
+    },
+    {
+        "command": "c++ -c -I/home/tianchen/racon/build/_deps/spoa-src/include -Wall -Wextra -pedantic -Wall -Wextra -pedantic -Wno-aligned-new -Wno-ignored-attributes -O3 -DNDEBUG -std=c++11 -o CMakeFiles/spoa.dir/src/alignment_engine.cpp.o /home/tianchen/racon/build/_deps/spoa-src/src/alignment_engine.cpp",
+        "directory": "/home/tianchen/racon/build/_deps/spoa-build",
+        "file": "/home/tianchen/racon/build/_deps/spoa-src/src/alignment_engine.cpp"
+    },
+    {
+        "command": "c++ -c -I/home/tianchen/racon/build/_deps/spoa-src/include -Wall -Wextra -pedantic -Wall -Wextra -pedantic -Wno-aligned-new -Wno-ignored-attributes -O3 -DNDEBUG -std=c++11 -o CMakeFiles/spoa.dir/src/graph.cpp.o /home/tianchen/racon/build/_deps/spoa-src/src/graph.cpp",
+        "directory": "/home/tianchen/racon/build/_deps/spoa-build",
+        "file": "/home/tianchen/racon/build/_deps/spoa-src/src/graph.cpp"
+    },
+    {
+        "command": "c++ -c -I/home/tianchen/racon/build/_deps/spoa-src/include -Wall -Wextra -pedantic -Wall -Wextra -pedantic -Wno-aligned-new -Wno-ignored-attributes -O3 -DNDEBUG -std=c++11 -o CMakeFiles/spoa.dir/src/simd_alignment_engine_dispatcher.cpp.o /home/tianchen/racon/build/_deps/spoa-src/src/simd_alignment_engine_dispatcher.cpp",
+        "directory": "/home/tianchen/racon/build/_deps/spoa-build",
+        "file": "/home/tianchen/racon/build/_deps/spoa-src/src/simd_alignment_engine_dispatcher.cpp"
+    },
+    {
+        "command": "c++ -c -I/home/tianchen/racon/build/_deps/spoa-src/include -Wall -Wextra -pedantic -Wall -Wextra -pedantic -Wno-aligned-new -Wno-ignored-attributes -O3 -DNDEBUG -std=c++11 -o CMakeFiles/spoa.dir/src/sisd_alignment_engine.cpp.o /home/tianchen/racon/build/_deps/spoa-src/src/sisd_alignment_engine.cpp",
+        "directory": "/home/tianchen/racon/build/_deps/spoa-build",
+        "file": "/home/tianchen/racon/build/_deps/spoa-src/src/sisd_alignment_engine.cpp"
+    },
+    {
+        "command": "ar qc lib/libspoa.a CMakeFiles/spoa.dir/src/alignment_engine.cpp.o CMakeFiles/spoa.dir/src/graph.cpp.o CMakeFiles/spoa.dir/src/simd_alignment_engine_dispatcher.cpp.o CMakeFiles/spoa.dir/src/sisd_alignment_engine.cpp.o",
+        "directory": "/home/tianchen/racon/build/_deps/spoa-build"
+    },
+    {
+        "command": "c++ -c -DGW_ENABLE_CACHING_ALLOCATOR -I/opt/intel/oneapi/intelpython/latest/include -I/home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/kseqpp/src -I/home/tianchen/racon/build/_deps/genomeworks-src/common/io/include -I/home/tianchen/racon/build/_deps/genomeworks-src/common/base/include -I/usr/local/cuda-11.4/include -I/home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/spdlog/include -Wall -Wextra -pedantic -fopenmp -O3 -DNDEBUG -o CMakeFiles/gwio.dir/src/fasta_parser.cpp.o /home/tianchen/racon/build/_deps/genomeworks-src/common/io/src/fasta_parser.cpp",
+        "directory": "/home/tianchen/racon/build/_deps/genomeworks-build/common/io",
+        "file": "/home/tianchen/racon/build/_deps/genomeworks-src/common/io/src/fasta_parser.cpp"
+    },
+    {
+        "command": "c++ -c -DGW_ENABLE_CACHING_ALLOCATOR -I/opt/intel/oneapi/intelpython/latest/include -I/home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/kseqpp/src -I/home/tianchen/racon/build/_deps/genomeworks-src/common/io/include -I/home/tianchen/racon/build/_deps/genomeworks-src/common/base/include -I/usr/local/cuda-11.4/include -I/home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/spdlog/include -Wall -Wextra -pedantic -fopenmp -O3 -DNDEBUG -o CMakeFiles/gwio.dir/src/kseqpp_fasta_parser.cpp.o /home/tianchen/racon/build/_deps/genomeworks-src/common/io/src/kseqpp_fasta_parser.cpp",
+        "directory": "/home/tianchen/racon/build/_deps/genomeworks-build/common/io",
+        "file": "/home/tianchen/racon/build/_deps/genomeworks-src/common/io/src/kseqpp_fasta_parser.cpp"
+    },
+    {
+        "command": "ar qc ../../../../lib/libgwio.a CMakeFiles/gwio.dir/src/fasta_parser.cpp.o CMakeFiles/gwio.dir/src/kseqpp_fasta_parser.cpp.o",
+        "directory": "/home/tianchen/racon/build/_deps/genomeworks-build/common/io"
+    },
+    {
+        "command": "nvcc -c  -o /home/tianchen/racon/build/_deps/genomeworks-build/cudapoa/CMakeFiles/cudapoa.dir/src/./cudapoa_generated_utils.cu.o -m64 -DGW_ENABLE_CACHING_ALLOCATOR -Wall -Wextra -pedantic -fopenmp -O3 -DNDEBUG -Wall -Wno-pedantic -std=c++14 -DNVCC -I/usr/local/cuda-11.4/include -I/opt/intel/oneapi/intelpython/latest/include -I/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/include -I/home/tianchen/racon/build/_deps/genomeworks-src/common/base/include -I/home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/spdlog/include -I/home/tianchen/racon/build/_deps/genomeworks-src/common/io/include -D__CUDACC__=1 /home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/utils.cu",
+        "directory": "/home/tianchen/racon/build/_deps/genomeworks-build/cudapoa/CMakeFiles/cudapoa.dir/src",
+        "file": "/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/utils.cu"
+    },
+    {
+        "command": "nvcc -c  -o /home/tianchen/racon/build/_deps/genomeworks-build/cudapoa/CMakeFiles/cudapoa.dir/src/./cudapoa_generated_batch.cu.o -m64 -DGW_ENABLE_CACHING_ALLOCATOR -Wall -Wextra -pedantic -fopenmp -O3 -DNDEBUG -Wall -Wno-pedantic -std=c++14 -DNVCC -I/usr/local/cuda-11.4/include -I/opt/intel/oneapi/intelpython/latest/include -I/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/include -I/home/tianchen/racon/build/_deps/genomeworks-src/common/base/include -I/home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/spdlog/include -I/home/tianchen/racon/build/_deps/genomeworks-src/common/io/include -D__CUDACC__=1 /home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/batch.cu",
+        "directory": "/home/tianchen/racon/build/_deps/genomeworks-build/cudapoa/CMakeFiles/cudapoa.dir/src",
+        "file": "/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/batch.cu"
+    },
+    {
+        "command": "c++ -c -DGW_ENABLE_CACHING_ALLOCATOR -I/opt/intel/oneapi/intelpython/latest/include -I/usr/local/cuda-11.4/include -I/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/include -I/home/tianchen/racon/build/_deps/genomeworks-src/common/base/include -I/home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/spdlog/include -I/home/tianchen/racon/build/_deps/genomeworks-src/common/io/include -Wall -Wextra -pedantic -fopenmp -O3 -DNDEBUG -Wextra -std=c++17 -o CMakeFiles/cudapoa.dir/src/cudapoa.cpp.o /home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa.cpp",
+        "directory": "/home/tianchen/racon/build/_deps/genomeworks-build/cudapoa",
+        "file": "/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa.cpp"
+    },
+    {
+        "command": "c++ -c -DGW_ENABLE_CACHING_ALLOCATOR -I/opt/intel/oneapi/intelpython/latest/include -I/usr/local/cuda-11.4/include -I/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/include -I/home/tianchen/racon/build/_deps/genomeworks-src/common/base/include -I/home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/spdlog/include -I/home/tianchen/racon/build/_deps/genomeworks-src/common/io/include -Wall -Wextra -pedantic -fopenmp -O3 -DNDEBUG -Wextra -std=c++17 -o CMakeFiles/cudapoa.dir/version.cpp.o /home/tianchen/racon/build/_deps/genomeworks-build/cudapoa/version.cpp",
+        "directory": "/home/tianchen/racon/build/_deps/genomeworks-build/cudapoa",
+        "file": "/home/tianchen/racon/build/_deps/genomeworks-build/cudapoa/version.cpp"
+    },
+    {
+        "command": "ar qc ../../../lib/libcudapoa.a CMakeFiles/cudapoa.dir/src/cudapoa.cpp.o CMakeFiles/cudapoa.dir/version.cpp.o CMakeFiles/cudapoa.dir/src/cudapoa_generated_batch.cu.o CMakeFiles/cudapoa.dir/src/cudapoa_generated_utils.cu.o",
+        "directory": "/home/tianchen/racon/build/_deps/genomeworks-build/cudapoa"
+    },
+    {
+        "command": "c++ -c -DCUDA_ENABLED -DGW_ENABLE_CACHING_ALLOCATOR -I/home/tianchen/racon/src -I/usr/local/cuda-11.4/include -I/home/tianchen/racon/build/_deps/bioparser-src/include -I/home/tianchen/racon/build/_deps/edlib-src/edlib/include -I/home/tianchen/racon/build/_deps/spoa-src/include -I/home/tianchen/racon/build/_deps/thread_pool-src/include -I/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/include -I/home/tianchen/racon/build/_deps/genomeworks-src/common/base/include -I/home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/spdlog/include -I/home/tianchen/racon/build/_deps/genomeworks-src/common/io/include -I/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/include -isystem /home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/cub -Wall -Wextra -pedantic -O3 -DNDEBUG -pthread -std=c++11 -o CMakeFiles/racon.dir/src/logger.cpp.o /home/tianchen/racon/src/logger.cpp",
+        "directory": "/home/tianchen/racon/build",
+        "file": "/home/tianchen/racon/src/logger.cpp"
+    },
+    {
+        "command": "c++ -c -DCUDA_ENABLED -DGW_ENABLE_CACHING_ALLOCATOR -I/home/tianchen/racon/src -I/usr/local/cuda-11.4/include -I/home/tianchen/racon/build/_deps/bioparser-src/include -I/home/tianchen/racon/build/_deps/edlib-src/edlib/include -I/home/tianchen/racon/build/_deps/spoa-src/include -I/home/tianchen/racon/build/_deps/thread_pool-src/include -I/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/include -I/home/tianchen/racon/build/_deps/genomeworks-src/common/base/include -I/home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/spdlog/include -I/home/tianchen/racon/build/_deps/genomeworks-src/common/io/include -I/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/include -isystem /home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/cub -Wall -Wextra -pedantic -O3 -DNDEBUG -pthread -std=c++11 -o CMakeFiles/racon.dir/src/polisher.cpp.o /home/tianchen/racon/src/polisher.cpp",
+        "directory": "/home/tianchen/racon/build",
+        "file": "/home/tianchen/racon/src/polisher.cpp"
+    },
+    {
+        "command": "c++ -c -DCUDA_ENABLED -DGW_ENABLE_CACHING_ALLOCATOR -I/home/tianchen/racon/src -I/usr/local/cuda-11.4/include -I/home/tianchen/racon/build/_deps/bioparser-src/include -I/home/tianchen/racon/build/_deps/edlib-src/edlib/include -I/home/tianchen/racon/build/_deps/spoa-src/include -I/home/tianchen/racon/build/_deps/thread_pool-src/include -I/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/include -I/home/tianchen/racon/build/_deps/genomeworks-src/common/base/include -I/home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/spdlog/include -I/home/tianchen/racon/build/_deps/genomeworks-src/common/io/include -I/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/include -isystem /home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/cub -Wall -Wextra -pedantic -O3 -DNDEBUG -pthread -std=c++11 -o CMakeFiles/racon.dir/src/overlap.cpp.o /home/tianchen/racon/src/overlap.cpp",
+        "directory": "/home/tianchen/racon/build",
+        "file": "/home/tianchen/racon/src/overlap.cpp"
+    },
+    {
+        "command": "c++ -c -DCUDA_ENABLED -DGW_ENABLE_CACHING_ALLOCATOR -I/home/tianchen/racon/src -I/usr/local/cuda-11.4/include -I/home/tianchen/racon/build/_deps/bioparser-src/include -I/home/tianchen/racon/build/_deps/edlib-src/edlib/include -I/home/tianchen/racon/build/_deps/spoa-src/include -I/home/tianchen/racon/build/_deps/thread_pool-src/include -I/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/include -I/home/tianchen/racon/build/_deps/genomeworks-src/common/base/include -I/home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/spdlog/include -I/home/tianchen/racon/build/_deps/genomeworks-src/common/io/include -I/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/include -isystem /home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/cub -Wall -Wextra -pedantic -O3 -DNDEBUG -pthread -std=c++11 -o CMakeFiles/racon.dir/src/sequence.cpp.o /home/tianchen/racon/src/sequence.cpp",
+        "directory": "/home/tianchen/racon/build",
+        "file": "/home/tianchen/racon/src/sequence.cpp"
+    },
+    {
+        "command": "c++ -c -DCUDA_ENABLED -DGW_ENABLE_CACHING_ALLOCATOR -I/home/tianchen/racon/src -I/usr/local/cuda-11.4/include -I/home/tianchen/racon/build/_deps/bioparser-src/include -I/home/tianchen/racon/build/_deps/edlib-src/edlib/include -I/home/tianchen/racon/build/_deps/spoa-src/include -I/home/tianchen/racon/build/_deps/thread_pool-src/include -I/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/include -I/home/tianchen/racon/build/_deps/genomeworks-src/common/base/include -I/home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/spdlog/include -I/home/tianchen/racon/build/_deps/genomeworks-src/common/io/include -I/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/include -isystem /home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/cub -Wall -Wextra -pedantic -O3 -DNDEBUG -pthread -std=c++11 -o CMakeFiles/racon.dir/src/window.cpp.o /home/tianchen/racon/src/window.cpp",
+        "directory": "/home/tianchen/racon/build",
+        "file": "/home/tianchen/racon/src/window.cpp"
+    },
+    {
+        "command": "c++ -c -DCUDA_ENABLED -DGW_ENABLE_CACHING_ALLOCATOR -I/home/tianchen/racon/src -I/usr/local/cuda-11.4/include -I/home/tianchen/racon/build/_deps/bioparser-src/include -I/home/tianchen/racon/build/_deps/edlib-src/edlib/include -I/home/tianchen/racon/build/_deps/spoa-src/include -I/home/tianchen/racon/build/_deps/thread_pool-src/include -I/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/include -I/home/tianchen/racon/build/_deps/genomeworks-src/common/base/include -I/home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/spdlog/include -I/home/tianchen/racon/build/_deps/genomeworks-src/common/io/include -I/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/include -isystem /home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/cub -Wall -Wextra -pedantic -O3 -DNDEBUG -pthread -std=c++11 -o CMakeFiles/racon.dir/src/cuda/cudapolisher.cpp.o /home/tianchen/racon/src/cuda/cudapolisher.cpp",
+        "directory": "/home/tianchen/racon/build",
+        "file": "/home/tianchen/racon/src/cuda/cudapolisher.cpp"
+    },
+    {
+        "command": "c++ -c -DCUDA_ENABLED -DGW_ENABLE_CACHING_ALLOCATOR -I/home/tianchen/racon/src -I/usr/local/cuda-11.4/include -I/home/tianchen/racon/build/_deps/bioparser-src/include -I/home/tianchen/racon/build/_deps/edlib-src/edlib/include -I/home/tianchen/racon/build/_deps/spoa-src/include -I/home/tianchen/racon/build/_deps/thread_pool-src/include -I/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/include -I/home/tianchen/racon/build/_deps/genomeworks-src/common/base/include -I/home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/spdlog/include -I/home/tianchen/racon/build/_deps/genomeworks-src/common/io/include -I/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/include -isystem /home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/cub -Wall -Wextra -pedantic -O3 -DNDEBUG -pthread -std=c++11 -o CMakeFiles/racon.dir/src/cuda/cudabatch.cpp.o /home/tianchen/racon/src/cuda/cudabatch.cpp",
+        "directory": "/home/tianchen/racon/build",
+        "file": "/home/tianchen/racon/src/cuda/cudabatch.cpp"
+    },
+    {
+        "command": "c++ -c -DCUDA_ENABLED -DGW_ENABLE_CACHING_ALLOCATOR -I/home/tianchen/racon/src -I/usr/local/cuda-11.4/include -I/home/tianchen/racon/build/_deps/bioparser-src/include -I/home/tianchen/racon/build/_deps/edlib-src/edlib/include -I/home/tianchen/racon/build/_deps/spoa-src/include -I/home/tianchen/racon/build/_deps/thread_pool-src/include -I/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/include -I/home/tianchen/racon/build/_deps/genomeworks-src/common/base/include -I/home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/spdlog/include -I/home/tianchen/racon/build/_deps/genomeworks-src/common/io/include -I/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/include -isystem /home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/cub -Wall -Wextra -pedantic -O3 -DNDEBUG -pthread -std=c++11 -o CMakeFiles/racon.dir/src/cuda/cudaaligner.cpp.o /home/tianchen/racon/src/cuda/cudaaligner.cpp",
+        "directory": "/home/tianchen/racon/build",
+        "file": "/home/tianchen/racon/src/cuda/cudaaligner.cpp"
+    },
+    {
+        "command": "ar qc lib/libracon.a CMakeFiles/racon.dir/src/logger.cpp.o CMakeFiles/racon.dir/src/polisher.cpp.o CMakeFiles/racon.dir/src/overlap.cpp.o CMakeFiles/racon.dir/src/sequence.cpp.o CMakeFiles/racon.dir/src/window.cpp.o CMakeFiles/racon.dir/src/cuda/cudapolisher.cpp.o CMakeFiles/racon.dir/src/cuda/cudabatch.cpp.o CMakeFiles/racon.dir/src/cuda/cudaaligner.cpp.o",
+        "directory": "/home/tianchen/racon/build"
+    },
+    {
+        "command": "c++ -c -I/home/tianchen/racon/build/_deps/googletest-src/googletest/include -I/home/tianchen/racon/build/_deps/googletest-src/googletest -Wall -Wextra -pedantic -O3 -DNDEBUG -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -pthread -std=c++11 -o CMakeFiles/gtest.dir/src/gtest-all.cc.o /home/tianchen/racon/build/_deps/googletest-src/googletest/src/gtest-all.cc",
+        "directory": "/home/tianchen/racon/build/_deps/googletest-build/googletest",
+        "file": "/home/tianchen/racon/build/_deps/googletest-src/googletest/src/gtest-all.cc"
+    },
+    {
+        "command": "ar qc ../../../lib/libgtest.a CMakeFiles/gtest.dir/src/gtest-all.cc.o",
+        "directory": "/home/tianchen/racon/build/_deps/googletest-build/googletest"
+    },
+    {
+        "command": "c++ -c -isystem /home/tianchen/racon/build/_deps/googletest-src/googletest/include -isystem /home/tianchen/racon/build/_deps/googletest-src/googletest -Wall -Wextra -pedantic -O3 -DNDEBUG -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -pthread -std=c++11 -o CMakeFiles/gtest_main.dir/src/gtest_main.cc.o /home/tianchen/racon/build/_deps/googletest-src/googletest/src/gtest_main.cc",
+        "directory": "/home/tianchen/racon/build/_deps/googletest-build/googletest",
+        "file": "/home/tianchen/racon/build/_deps/googletest-src/googletest/src/gtest_main.cc"
+    },
+    {
+        "command": "ar qc ../../../lib/libgtest_main.a CMakeFiles/gtest_main.dir/src/gtest_main.cc.o",
+        "directory": "/home/tianchen/racon/build/_deps/googletest-build/googletest"
+    },
+    {
+        "command": "c++ -c -DCUDA_ENABLED -DGW_ENABLE_CACHING_ALLOCATOR -DTEST_DATA=\\\"/home/tianchen/racon/test/data/\\\" -I/home/tianchen/racon/src -I/usr/local/cuda-11.4/include -I/home/tianchen/racon/build/_deps/bioparser-src/include -I/home/tianchen/racon/build/_deps/edlib-src/edlib/include -I/home/tianchen/racon/build/_deps/spoa-src/include -I/home/tianchen/racon/build/_deps/thread_pool-src/include -I/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/include -I/home/tianchen/racon/build/_deps/genomeworks-src/common/base/include -I/home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/spdlog/include -I/home/tianchen/racon/build/_deps/genomeworks-src/common/io/include -I/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/include -isystem /home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/cub -isystem /home/tianchen/racon/build/_deps/googletest-src/googletest/include -isystem /home/tianchen/racon/build/_deps/googletest-src/googletest -Wall -Wextra -pedantic -O3 -DNDEBUG -pthread -std=c++11 -o CMakeFiles/racon_test.dir/test/racon_test.cpp.o /home/tianchen/racon/test/racon_test.cpp",
+        "directory": "/home/tianchen/racon/build",
+        "file": "/home/tianchen/racon/test/racon_test.cpp"
+    },
+    {
+        "command": "ld -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/cc5g5zE2.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -melf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o bin/racon_test /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o CMakeFiles/racon_test.dir/test/racon_test.cpp.o lib/libracon.a lib/libgtest_main.a /usr/lib/x86_64-linux-gnu/libz.so lib/libedlib.a _deps/spoa-build/lib/libspoa.a lib/libcudapoa.a lib/libgwio.a lib/libcudaaligner.a lib/libgwbase.a /usr/local/cuda-11.4/lib64/libcudart_static.a /usr/lib/x86_64-linux-gnu/librt.so lib/libgtest.a /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o",
+        "directory": "/home/tianchen/racon/build"
+    },
+    {
+        "command": "c++ -c -DCUDA_ENABLED -DGW_ENABLE_CACHING_ALLOCATOR -DVERSION=\\\"1.5.0\\\" -I/home/tianchen/racon/src -I/usr/local/cuda-11.4/include -I/home/tianchen/racon/build/_deps/bioparser-src/include -I/home/tianchen/racon/build/_deps/edlib-src/edlib/include -I/home/tianchen/racon/build/_deps/spoa-src/include -I/home/tianchen/racon/build/_deps/thread_pool-src/include -I/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/include -I/home/tianchen/racon/build/_deps/genomeworks-src/common/base/include -I/home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/spdlog/include -I/home/tianchen/racon/build/_deps/genomeworks-src/common/io/include -I/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/include -isystem /home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/cub -Wall -Wextra -pedantic -O3 -DNDEBUG -pthread -std=c++11 -o CMakeFiles/racon_exe.dir/src/main.cpp.o /home/tianchen/racon/src/main.cpp",
+        "directory": "/home/tianchen/racon/build",
+        "file": "/home/tianchen/racon/src/main.cpp"
+    },
+    {
+        "command": "ld -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccQqhnHn.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -melf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o bin/racon /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o CMakeFiles/racon_exe.dir/src/main.cpp.o lib/libracon.a /usr/lib/x86_64-linux-gnu/libz.so lib/libedlib.a _deps/spoa-build/lib/libspoa.a lib/libcudapoa.a lib/libgwio.a lib/libcudaaligner.a lib/libgwbase.a /usr/local/cuda-11.4/lib64/libcudart_static.a /usr/lib/x86_64-linux-gnu/librt.so /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o",
+        "directory": "/home/tianchen/racon/build"
+    }
+]

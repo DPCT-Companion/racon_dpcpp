@@ -1,0 +1,8 @@
+# Compiled Object files
+**/build/**/CMakeFiles
+subprojects
+!subprojects/*.wrap
+build-meson
+*.o
+**/build/r000gh
+**/build/**/.git

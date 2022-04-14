@@ -1,0 +1,407 @@
+---
+MainSourceFile:  '/home/tianchen/racon/build/dpcpp/build/_deps/genomeworks-src/cudapoa/src/allocate_block.hpp'
+Replacements:
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/allocate_block.hpp'
+    Offset:          609
+    Length:          30
+    ReplacementText: "#include <CL/sycl.hpp>\n#include <dpct/dpct.hpp>\n#include \"cudapoa_structs.dp.hpp\""
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/allocate_block.hpp'
+    Offset:          640
+    Length:          30
+    ReplacementText: '#include "cudapoa_kernels.dp.hpp"'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/allocate_block.hpp'
+    Offset:          776
+    Length:          30
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/allocate_block.hpp'
+    Offset:          3575
+    Length:          0
+    ReplacementText: "        /*\n        DPCT1003:65: Migrated API does not return error code. (*, 0) is inserted. You may need to rewrite this code.\n        */\n        /*\n        DPCT1048:26: The original value cudaHostAllocDefault is not meaningful in the migrated code and was removed or replaced with 0. You may need to check the migrated code.\n        */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/allocate_block.hpp'
+    Offset:          3599
+    Length:          69
+    ReplacementText: '(block_data_h_ = (uint8_t *)sycl::malloc_host(total_h_, dpct::get_default_queue()), 0)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/allocate_block.hpp'
+    Offset:          3671
+    Length:          0
+    ReplacementText: "        /*\n        DPCT1003:66: Migrated API does not return error code. (*, 0) is inserted. You may need to rewrite this code.\n        */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/allocate_block.hpp'
+    Offset:          3695
+    Length:          44
+    ReplacementText: '(block_data_d_ = (uint8_t *)sycl::malloc_device(total_d_, dpct::get_default_queue()), 0)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/allocate_block.hpp'
+    Offset:          3773
+    Length:          0
+    ReplacementText: "        /*\n        DPCT1003:67: Migrated API does not return error code. (*, 0) is inserted. You may need to rewrite this code.\n        */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/allocate_block.hpp'
+    Offset:          3797
+    Length:          23
+    ReplacementText: '(sycl::free(block_data_d_, dpct::get_default_queue())'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/allocate_block.hpp'
+    Offset:          3820
+    Length:          0
+    ReplacementText: ', 0)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/allocate_block.hpp'
+    Offset:          3823
+    Length:          0
+    ReplacementText: "        /*\n        DPCT1003:68: Migrated API does not return error code. (*, 0) is inserted. You may need to rewrite this code.\n        */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/allocate_block.hpp'
+    Offset:          3847
+    Length:          27
+    ReplacementText: '(sycl::free(block_data_h_, dpct::get_default_queue())'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/allocate_block.hpp'
+    Offset:          3874
+    Length:          0
+    ReplacementText: ', 0)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/allocate_block.hpp'
+    Offset:          30593
+    Length:          0
+    ReplacementText: "        /*\n        DPCT1072:69: DPC++ currently does not support getting the available memory on the current device. You may need to adjust the code.\n        */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/allocate_block.hpp'
+    Offset:          30601
+    Length:          29
+    ReplacementText: 'total = dpct::get_current_device().get_device_info().get_global_mem_size()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+DpctVersion:     2022.0.0
+MainHelperFileName: dpct
+USMLevel:        ''
+FeatureMap:
+  device.hpp:
+    dev_mgr:
+      IsCalled:        false
+      FeatureName:     ''
+      SubFeatureMap:
+        dev_mgr_current_device_id:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/tianchen/racon/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/cudautils.hpp'
+          FeatureName:     'dev_mgr::current_device_id'
+          SubFeatureMap:   {}
+        dev_mgr_device_count:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/tianchen/racon/build/_deps/genomeworks-build/detect_cuda_compute_capabilities.cpp'
+            - '/home/tianchen/racon/src/cuda/cudapolisher.cpp'
+          FeatureName:     'dev_mgr::device_count'
+          SubFeatureMap:   {}
+        dev_mgr_get_device:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/tianchen/racon/build/_deps/genomeworks-build/detect_cuda_compute_capabilities.cpp'
+          FeatureName:     'dev_mgr::get_device'
+          SubFeatureMap:   {}
+        dev_mgr_select_device:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/tianchen/racon/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/cudautils.hpp'
+            - '/home/tianchen/racon/src/cuda/cudaaligner.cpp'
+            - '/home/tianchen/racon/src/cuda/cudapolisher.cpp'
+          FeatureName:     'dev_mgr::select_device'
+          SubFeatureMap:   {}
+    device_ext:
+      IsCalled:        false
+      FeatureName:     ''
+      SubFeatureMap:
+        device_ext_create_queue:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/src/myers_gpu.cu'
+            - '/home/tianchen/racon/src/cuda/cudaaligner.cpp'
+            - '/home/tianchen/racon/src/cuda/cudabatch.cpp'
+          FeatureName:     'device_ext::create_queue'
+          SubFeatureMap:   {}
+        device_ext_destroy_queue:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/src/myers_gpu.cu'
+            - '/home/tianchen/racon/src/cuda/cudaaligner.cpp'
+            - '/home/tianchen/racon/src/cuda/cudabatch.cpp'
+          FeatureName:     'device_ext::destroy_queue'
+          SubFeatureMap:   {}
+        device_ext_get_device_info_return_info:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/tianchen/racon/build/_deps/genomeworks-build/detect_cuda_compute_capabilities.cpp'
+            - '/home/tianchen/racon/build/_deps/genomeworks-src/common/base/src/cudautils.cpp'
+            - '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/allocate_block.hpp'
+            - '/home/tianchen/racon/src/cuda/cudapolisher.cpp'
+          FeatureName:     'device_ext::get_device_info'
+          SubFeatureMap:   {}
+        device_ext_queues_wait_and_throw:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/tianchen/racon/src/cuda/cudapolisher.cpp'
+          FeatureName:     'device_ext::queues_wait_and_throw'
+          SubFeatureMap:   {}
+    device_info:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/tianchen/racon/build/_deps/genomeworks-build/detect_cuda_compute_capabilities.cpp'
+      FeatureName:     device_info
+      SubFeatureMap:
+        device_info_get_global_mem_size:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/tianchen/racon/build/_deps/genomeworks-src/common/base/src/cudautils.cpp'
+            - '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/allocate_block.hpp'
+            - '/home/tianchen/racon/src/cuda/cudapolisher.cpp'
+          FeatureName:     'device_info::get_global_mem_size'
+          SubFeatureMap:   {}
+        device_info_get_major_version:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/tianchen/racon/build/_deps/genomeworks-build/detect_cuda_compute_capabilities.cpp'
+          FeatureName:     'device_info::get_major_version'
+          SubFeatureMap:   {}
+        device_info_get_minor_version:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/tianchen/racon/build/_deps/genomeworks-build/detect_cuda_compute_capabilities.cpp'
+          FeatureName:     'device_info::get_minor_version'
+          SubFeatureMap:   {}
+    get_current_device:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/common/base/src/cudautils.cpp'
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/src/myers_gpu.cu'
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/allocate_block.hpp'
+        - '/home/tianchen/racon/src/cuda/cudaaligner.cpp'
+        - '/home/tianchen/racon/src/cuda/cudabatch.cpp'
+        - '/home/tianchen/racon/src/cuda/cudapolisher.cpp'
+      FeatureName:     get_current_device
+      SubFeatureMap:   {}
+    get_default_queue:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/allocator.hpp'
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/cudautils.hpp'
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/device_preallocated_allocator.cuh'
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/common/base/src/cudautils.cpp'
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/allocate_block.hpp'
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_add_alignment.cuh'
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_generate_consensus.cuh'
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_nw.cuh'
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_topsort.cuh'
+        - '/home/tianchen/racon/src/cuda/cudapolisher.cpp'
+      FeatureName:     get_default_queue
+      SubFeatureMap:   {}
+  dpct.hpp:
+    dpct_align_and_inline:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/cudautils.hpp'
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_nw.cuh'
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_structs.cuh'
+      FeatureName:     '__dpct_align__(n) and __dpct_inline__'
+      SubFeatureMap:   {}
+    dpct_compatibility_temp:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/mathutils.hpp'
+      FeatureName:     DPCT_COMPATIBILITY_TEMP
+      SubFeatureMap:   {}
+  dpl_utils.hpp:
+    non_local_include_dependency:
+      IsCalled:        true
+      CallerSrcFiles:
+        - ''
+      FeatureName:     ''
+      SubFeatureMap:   {}
+  memory.hpp:
+    async_dpct_memcpy:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/cudautils.hpp'
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/src/aligner_global.cpp'
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/src/myers_gpu.cu'
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+      FeatureName:     async_dpct_memcpy
+      SubFeatureMap:   {}
+    async_dpct_memcpy_2d:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/cudautils.hpp'
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/src/aligner_global.cpp'
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/src/myers_gpu.cu'
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+      FeatureName:     async_dpct_memcpy
+      SubFeatureMap:   {}
+    async_dpct_memcpy_3d:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/cudautils.hpp'
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/src/aligner_global.cpp'
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/src/myers_gpu.cu'
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+      FeatureName:     async_dpct_memcpy
+      SubFeatureMap:   {}
+    async_dpct_memset:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/src/aligner_global.cpp'
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/src/batched_device_matrices.cuh'
+      FeatureName:     async_dpct_memset
+      SubFeatureMap:   {}
+    async_dpct_memset_2d:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/src/aligner_global.cpp'
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/src/batched_device_matrices.cuh'
+      FeatureName:     async_dpct_memset
+      SubFeatureMap:   {}
+    async_dpct_memset_3d:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/src/aligner_global.cpp'
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/src/batched_device_matrices.cuh'
+      FeatureName:     async_dpct_memset
+      SubFeatureMap:   {}
+    dpct_memcpy:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/cudautils.hpp'
+      FeatureName:     dpct_memcpy
+      SubFeatureMap:   {}
+    dpct_memcpy_2d:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/cudautils.hpp'
+      FeatureName:     dpct_memcpy
+      SubFeatureMap:   {}
+    dpct_memcpy_3d:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/cudautils.hpp'
+      FeatureName:     dpct_memcpy
+      SubFeatureMap:   {}
+    memcpy_direction:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/cudautils.hpp'
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/src/aligner_global.cpp'
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/cudaaligner/src/myers_gpu.cu'
+        - '/home/tianchen/racon/build/_deps/genomeworks-src/cudapoa/src/cudapoa_batch.cuh'
+      FeatureName:     memcpy_direction
+      SubFeatureMap:   {}
+CompileTargets:  {}
+OptionMap:
+  AsyncHandler:
+    Value:           'false'
+    Specified:       false
+  CommentsEnabled:
+    Value:           'false'
+    Specified:       false
+  CompilationsDir:
+    Value:           '/home/tianchen/racon/build'
+    Specified:       true
+  CtadEnabled:
+    Value:           'false'
+    Specified:       false
+  CustomHelperFileName:
+    Value:           dpct
+    Specified:       false
+  ExperimentalFlag:
+    Value:           '0'
+    Specified:       false
+  ExplicitClNamespace:
+    Value:           'false'
+    Specified:       false
+  ExplicitNamespace:
+    Value:           '20'
+    Specified:       false
+  ExtensionFlag:
+    Value:           '4294967295'
+    Specified:       false
+  NDRangeDim:
+    Value:           '3'
+    Specified:       false
+  NoDRYPattern:
+    Value:           'false'
+    Specified:       false
+  OptimizeMigration:
+    Value:           'false'
+    Specified:       false
+  ProcessAll:
+    Value:           'false'
+    Specified:       false
+  SyclNamedLambda:
+    Value:           'false'
+    Specified:       false
+  UsmLevel:
+    Value:           '1'
+    Specified:       false
+...

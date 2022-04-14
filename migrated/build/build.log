@@ -1,0 +1,549 @@
+++ rm /home/tianchen/racon/build/lib/libcudaaligner.a /home/tianchen/racon/build/lib/libcudapoa.a /home/tianchen/racon/build/lib/libedlib.a /home/tianchen/racon/build/lib/libgtest.a /home/tianchen/racon/build/lib/libgtest_main.a /home/tianchen/racon/build/lib/libgwbase.a /home/tianchen/racon/build/lib/libgwio.a /home/tianchen/racon/build/lib/libracon.a
+++ dpcpp -c -fopenmp -std=c++20 -Wno-tautological-constant-compare -DPSTL_USE_PARALLEL_POLICIES=0 -o /home/tianchen/racon/migrated/build/_deps/genomeworks-build/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_9c4c4.dir/detect_cuda_compute_capabilities.cpp.dp.cpp.o /home/tianchen/racon/migrated/build/_deps/genomeworks-build/detect_cuda_compute_capabilities.cpp.dp.cpp
+++ dpcpp -o /home/tianchen/racon/migrated/build/_deps/genomeworks-build/CMakeFiles/CMakeTmp/cmTC_9c4c4 /home/tianchen/racon/migrated/build/_deps/genomeworks-build/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_9c4c4.dir/detect_cuda_compute_capabilities.cpp.dp.cpp.o /usr/lib/x86_64-linux-gnu/librt.so -lpthread
+++ dpcpp -c -DGW_ENABLE_CACHING_ALLOCATOR -I/opt/intel/oneapi/intelpython/python3.9/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/3rdparty/spdlog/include -fopenmp -O3 -DNDEBUG -std=c++20 -Wno-tautological-constant-compare -DPSTL_USE_PARALLEL_POLICIES=0 -o /home/tianchen/racon/migrated/build/_deps/genomeworks-build/common/base/CMakeFiles/gwbase.dir/src/cudautils.cpp.dp.cpp.o /home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/src/cudautils.cpp.dp.cpp
+++ dpcpp -c -DGW_ENABLE_CACHING_ALLOCATOR -I/opt/intel/oneapi/intelpython/python3.9/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/3rdparty/spdlog/include -fopenmp -O3 -DNDEBUG -std=c++20 -Wno-tautological-constant-compare -DPSTL_USE_PARALLEL_POLICIES=0 -o /home/tianchen/racon/migrated/build/_deps/genomeworks-build/common/base/CMakeFiles/gwbase.dir/src/logging.cpp.o /home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/src/logging.cpp
+++ dpcpp -c -DGW_ENABLE_CACHING_ALLOCATOR -I/opt/intel/oneapi/intelpython/python3.9/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/3rdparty/spdlog/include -fopenmp -O3 -DNDEBUG -std=c++20 -Wno-tautological-constant-compare -DPSTL_USE_PARALLEL_POLICIES=0 -o /home/tianchen/racon/migrated/build/_deps/genomeworks-build/common/base/CMakeFiles/gwbase.dir/src/graph.cpp.o /home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/src/graph.cpp
+++ ar qc /home/tianchen/racon/migrated/build/lib/libgwbase.a /home/tianchen/racon/migrated/build/_deps/genomeworks-build/common/base/CMakeFiles/gwbase.dir/src/cudautils.cpp.dp.cpp.o /home/tianchen/racon/migrated/build/_deps/genomeworks-build/common/base/CMakeFiles/gwbase.dir/src/logging.cpp.o /home/tianchen/racon/migrated/build/_deps/genomeworks-build/common/base/CMakeFiles/gwbase.dir/src/graph.cpp.o
+++ dpcpp -c -Wno-tautological-constant-compare -DPSTL_USE_PARALLEL_POLICIES=0 -o /home/tianchen/racon/migrated/build/_deps/genomeworks-build/cudaaligner/CMakeFiles/cudaaligner.dir/src/cudaaligner_generated_hirschberg_myers_gpu..dp.cpp.o -m64 -DGW_ENABLE_CACHING_ALLOCATOR -fopenmp -O3 -DNDEBUG -Wno-pedantic -std=c++20 -DNVCC -I/opt/intel/oneapi/intelpython/python3.9/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/3rdparty/spdlog/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/3rdparty/cub -D__CUDACC__=1 /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/src/hirschberg_myers_gpu.dp.cpp
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/src/hirschberg_myers_gpu.dp.cpp:19:
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/src/hirschberg_myers_gpu.dp.hpp:21:
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/src/batched_device_matrices.dp.hpp:26:
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/device_buffer.hpp:23:
+/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/allocator.hpp:118:67: warning: braces around scalar initializer [-Wbraced-scalar-init]
+                     const std::vector<sycl::queue *> &streams = {{0}}) try {
+                                                                  ^~~
+/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/allocator.hpp:244:67: warning: braces around scalar initializer [-Wbraced-scalar-init]
+                     const std::vector<sycl::queue *> &streams = {{0}}) try {
+                                                                  ^~~
+2 warnings generated.
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/src/hirschberg_myers_gpu.dp.cpp:19:
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/src/hirschberg_myers_gpu.dp.hpp:21:
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/src/batched_device_matrices.dp.hpp:26:
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/device_buffer.hpp:23:
+/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/allocator.hpp:118:67: warning: braces around scalar initializer [-Wbraced-scalar-init]
+                     const std::vector<sycl::queue *> &streams = {{0}}) try {
+                                                                  ^~~
+/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/allocator.hpp:244:67: warning: braces around scalar initializer [-Wbraced-scalar-init]
+                     const std::vector<sycl::queue *> &streams = {{0}}) try {
+                                                                  ^~~
+2 warnings generated.
+++ dpcpp -c -Wno-tautological-constant-compare -DPSTL_USE_PARALLEL_POLICIES=0 -o /home/tianchen/racon/migrated/build/_deps/genomeworks-build/cudaaligner/CMakeFiles/cudaaligner.dir/src/cudaaligner_generated_ukkonen_gpu..dp.cpp.o -m64 -DGW_ENABLE_CACHING_ALLOCATOR -fopenmp -O3 -DNDEBUG -Wno-pedantic -std=c++20 -DNVCC -I/opt/intel/oneapi/intelpython/python3.9/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/3rdparty/spdlog/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/3rdparty/cub -D__CUDACC__=1 /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/src/ukkonen_gpu.dp.cpp
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/src/ukkonen_gpu.dp.cpp:20:
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/src/batched_device_matrices.dp.hpp:26:
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/device_buffer.hpp:23:
+/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/allocator.hpp:118:67: warning: braces around scalar initializer [-Wbraced-scalar-init]
+                     const std::vector<sycl::queue *> &streams = {{0}}) try {
+                                                                  ^~~
+/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/allocator.hpp:244:67: warning: braces around scalar initializer [-Wbraced-scalar-init]
+                     const std::vector<sycl::queue *> &streams = {{0}}) try {
+                                                                  ^~~
+2 warnings generated.
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/src/ukkonen_gpu.dp.cpp:20:
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/src/batched_device_matrices.dp.hpp:26:
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/device_buffer.hpp:23:
+/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/allocator.hpp:118:67: warning: braces around scalar initializer [-Wbraced-scalar-init]
+                     const std::vector<sycl::queue *> &streams = {{0}}) try {
+                                                                  ^~~
+/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/allocator.hpp:244:67: warning: braces around scalar initializer [-Wbraced-scalar-init]
+                     const std::vector<sycl::queue *> &streams = {{0}}) try {
+                                                                  ^~~
+2 warnings generated.
+++ dpcpp -c -Wno-tautological-constant-compare -DPSTL_USE_PARALLEL_POLICIES=0 -o /home/tianchen/racon/migrated/build/_deps/genomeworks-build/cudaaligner/CMakeFiles/cudaaligner.dir/src/cudaaligner_generated_myers_gpu..dp.cpp.o -m64 -DGW_ENABLE_CACHING_ALLOCATOR -fopenmp -O3 -DNDEBUG -Wno-pedantic -std=c++20 -DNVCC -I/opt/intel/oneapi/intelpython/python3.9/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/3rdparty/spdlog/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/3rdparty/cub -D__CUDACC__=1 /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/src/myers_gpu.dp.cpp
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/src/myers_gpu.dp.cpp:19:
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/src/myers_gpu.dp.hpp:22:
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/src/batched_device_matrices.dp.hpp:26:
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/device_buffer.hpp:23:
+/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/allocator.hpp:118:67: warning: braces around scalar initializer [-Wbraced-scalar-init]
+                     const std::vector<sycl::queue *> &streams = {{0}}) try {
+                                                                  ^~~
+/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/allocator.hpp:244:67: warning: braces around scalar initializer [-Wbraced-scalar-init]
+                     const std::vector<sycl::queue *> &streams = {{0}}) try {
+                                                                  ^~~
+2 warnings generated.
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/src/myers_gpu.dp.cpp:19:
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/src/myers_gpu.dp.hpp:22:
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/src/batched_device_matrices.dp.hpp:26:
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/device_buffer.hpp:23:
+/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/allocator.hpp:118:67: warning: braces around scalar initializer [-Wbraced-scalar-init]
+                     const std::vector<sycl::queue *> &streams = {{0}}) try {
+                                                                  ^~~
+/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/allocator.hpp:244:67: warning: braces around scalar initializer [-Wbraced-scalar-init]
+                     const std::vector<sycl::queue *> &streams = {{0}}) try {
+                                                                  ^~~
+2 warnings generated.
+++ dpcpp -c -DGW_ENABLE_CACHING_ALLOCATOR -I/opt/intel/oneapi/intelpython/python3.9/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/3rdparty/spdlog/include -isystem /home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/cub -fopenmp -O3 -DNDEBUG -std=c++20 -Wno-tautological-constant-compare -DPSTL_USE_PARALLEL_POLICIES=0 -o /home/tianchen/racon/migrated/build/_deps/genomeworks-build/cudaaligner/CMakeFiles/cudaaligner.dir/src/cudaaligner.cpp.o /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/src/cudaaligner.cpp
+++ dpcpp -c -DGW_ENABLE_CACHING_ALLOCATOR -I/opt/intel/oneapi/intelpython/python3.9/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/3rdparty/spdlog/include -isystem /home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/cub -fopenmp -O3 -DNDEBUG -std=c++20 -Wno-tautological-constant-compare -DPSTL_USE_PARALLEL_POLICIES=0 -o /home/tianchen/racon/migrated/build/_deps/genomeworks-build/cudaaligner/CMakeFiles/cudaaligner.dir/src/aligner.cpp.dp.cpp.o /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/src/aligner.cpp.dp.cpp
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/src/aligner.cpp.dp.cpp:19:
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/include/claraparabricks/genomeworks/cudaaligner/aligner.hpp:22:
+/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/allocator.hpp:118:67: warning: braces around scalar initializer [-Wbraced-scalar-init]
+                     const std::vector<sycl::queue *> &streams = {{0}}) try {
+                                                                  ^~~
+/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/allocator.hpp:244:67: warning: braces around scalar initializer [-Wbraced-scalar-init]
+                     const std::vector<sycl::queue *> &streams = {{0}}) try {
+                                                                  ^~~
+2 warnings generated.
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/src/aligner.cpp.dp.cpp:19:
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/include/claraparabricks/genomeworks/cudaaligner/aligner.hpp:22:
+/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/allocator.hpp:118:67: warning: braces around scalar initializer [-Wbraced-scalar-init]
+                     const std::vector<sycl::queue *> &streams = {{0}}) try {
+                                                                  ^~~
+/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/allocator.hpp:244:67: warning: braces around scalar initializer [-Wbraced-scalar-init]
+                     const std::vector<sycl::queue *> &streams = {{0}}) try {
+                                                                  ^~~
+2 warnings generated.
+++ dpcpp -c -DGW_ENABLE_CACHING_ALLOCATOR -I/opt/intel/oneapi/intelpython/python3.9/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/3rdparty/spdlog/include -isystem /home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/cub -fopenmp -O3 -DNDEBUG -std=c++20 -Wno-tautological-constant-compare -DPSTL_USE_PARALLEL_POLICIES=0 -o /home/tianchen/racon/migrated/build/_deps/genomeworks-build/cudaaligner/CMakeFiles/cudaaligner.dir/src/alignment.cpp.o /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/src/alignment.cpp
+++ dpcpp -c -DGW_ENABLE_CACHING_ALLOCATOR -I/opt/intel/oneapi/intelpython/python3.9/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/3rdparty/spdlog/include -isystem /home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/cub -fopenmp -O3 -DNDEBUG -std=c++20 -Wno-tautological-constant-compare -DPSTL_USE_PARALLEL_POLICIES=0 -o /home/tianchen/racon/migrated/build/_deps/genomeworks-build/cudaaligner/CMakeFiles/cudaaligner.dir/src/alignment_impl.cpp.o /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/src/alignment_impl.cpp
+++ dpcpp -c -DGW_ENABLE_CACHING_ALLOCATOR -I/opt/intel/oneapi/intelpython/python3.9/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/3rdparty/spdlog/include -isystem /home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/cub -fopenmp -O3 -DNDEBUG -std=c++20 -Wno-tautological-constant-compare -DPSTL_USE_PARALLEL_POLICIES=0 -o /home/tianchen/racon/migrated/build/_deps/genomeworks-build/cudaaligner/CMakeFiles/cudaaligner.dir/src/aligner_global.cpp.dp.cpp.o /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/src/aligner_global.cpp.dp.cpp
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/src/aligner_global.cpp.dp.cpp:19:
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/src/aligner_global.hpp:23:
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/include/claraparabricks/genomeworks/cudaaligner/aligner.hpp:22:
+/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/allocator.hpp:118:67: warning: braces around scalar initializer [-Wbraced-scalar-init]
+                     const std::vector<sycl::queue *> &streams = {{0}}) try {
+                                                                  ^~~
+/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/allocator.hpp:244:67: warning: braces around scalar initializer [-Wbraced-scalar-init]
+                     const std::vector<sycl::queue *> &streams = {{0}}) try {
+                                                                  ^~~
+2 warnings generated.
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/src/aligner_global.cpp.dp.cpp:19:
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/src/aligner_global.hpp:23:
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/include/claraparabricks/genomeworks/cudaaligner/aligner.hpp:22:
+/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/allocator.hpp:118:67: warning: braces around scalar initializer [-Wbraced-scalar-init]
+                     const std::vector<sycl::queue *> &streams = {{0}}) try {
+                                                                  ^~~
+/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/allocator.hpp:244:67: warning: braces around scalar initializer [-Wbraced-scalar-init]
+                     const std::vector<sycl::queue *> &streams = {{0}}) try {
+                                                                  ^~~
+2 warnings generated.
+++ dpcpp -c -DGW_ENABLE_CACHING_ALLOCATOR -I/opt/intel/oneapi/intelpython/python3.9/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/3rdparty/spdlog/include -isystem /home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/cub -fopenmp -O3 -DNDEBUG -std=c++20 -Wno-tautological-constant-compare -DPSTL_USE_PARALLEL_POLICIES=0 -o /home/tianchen/racon/migrated/build/_deps/genomeworks-build/cudaaligner/CMakeFiles/cudaaligner.dir/src/aligner_global_ukkonen.cpp.dp.cpp.o /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/src/aligner_global_ukkonen.cpp.dp.cpp
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/src/aligner_global_ukkonen.cpp.dp.cpp:19:
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/src/aligner_global_ukkonen.hpp:21:
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/src/aligner_global.hpp:23:
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/include/claraparabricks/genomeworks/cudaaligner/aligner.hpp:22:
+/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/allocator.hpp:118:67: warning: braces around scalar initializer [-Wbraced-scalar-init]
+                     const std::vector<sycl::queue *> &streams = {{0}}) try {
+                                                                  ^~~
+/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/allocator.hpp:244:67: warning: braces around scalar initializer [-Wbraced-scalar-init]
+                     const std::vector<sycl::queue *> &streams = {{0}}) try {
+                                                                  ^~~
+2 warnings generated.
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/src/aligner_global_ukkonen.cpp.dp.cpp:19:
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/src/aligner_global_ukkonen.hpp:21:
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/src/aligner_global.hpp:23:
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/include/claraparabricks/genomeworks/cudaaligner/aligner.hpp:22:
+/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/allocator.hpp:118:67: warning: braces around scalar initializer [-Wbraced-scalar-init]
+                     const std::vector<sycl::queue *> &streams = {{0}}) try {
+                                                                  ^~~
+/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/allocator.hpp:244:67: warning: braces around scalar initializer [-Wbraced-scalar-init]
+                     const std::vector<sycl::queue *> &streams = {{0}}) try {
+                                                                  ^~~
+2 warnings generated.
+++ dpcpp -c -DGW_ENABLE_CACHING_ALLOCATOR -I/opt/intel/oneapi/intelpython/python3.9/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/3rdparty/spdlog/include -isystem /home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/cub -fopenmp -O3 -DNDEBUG -std=c++20 -Wno-tautological-constant-compare -DPSTL_USE_PARALLEL_POLICIES=0 -o /home/tianchen/racon/migrated/build/_deps/genomeworks-build/cudaaligner/CMakeFiles/cudaaligner.dir/src/aligner_global_myers.cpp.dp.cpp.o /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/src/aligner_global_myers.cpp.dp.cpp
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/src/aligner_global_myers.cpp.dp.cpp:19:
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/src/aligner_global_myers.hpp:21:
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/src/aligner_global.hpp:23:
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/include/claraparabricks/genomeworks/cudaaligner/aligner.hpp:22:
+/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/allocator.hpp:118:67: warning: braces around scalar initializer [-Wbraced-scalar-init]
+                     const std::vector<sycl::queue *> &streams = {{0}}) try {
+                                                                  ^~~
+/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/allocator.hpp:244:67: warning: braces around scalar initializer [-Wbraced-scalar-init]
+                     const std::vector<sycl::queue *> &streams = {{0}}) try {
+                                                                  ^~~
+2 warnings generated.
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/src/aligner_global_myers.cpp.dp.cpp:19:
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/src/aligner_global_myers.hpp:21:
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/src/aligner_global.hpp:23:
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/include/claraparabricks/genomeworks/cudaaligner/aligner.hpp:22:
+/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/allocator.hpp:118:67: warning: braces around scalar initializer [-Wbraced-scalar-init]
+                     const std::vector<sycl::queue *> &streams = {{0}}) try {
+                                                                  ^~~
+/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/allocator.hpp:244:67: warning: braces around scalar initializer [-Wbraced-scalar-init]
+                     const std::vector<sycl::queue *> &streams = {{0}}) try {
+                                                                  ^~~
+2 warnings generated.
+++ dpcpp -c -DGW_ENABLE_CACHING_ALLOCATOR -I/opt/intel/oneapi/intelpython/python3.9/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/3rdparty/spdlog/include -isystem /home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/cub -fopenmp -O3 -DNDEBUG -std=c++20 -Wno-tautological-constant-compare -DPSTL_USE_PARALLEL_POLICIES=0 -o /home/tianchen/racon/migrated/build/_deps/genomeworks-build/cudaaligner/CMakeFiles/cudaaligner.dir/src/aligner_global_myers_banded.cpp.dp.cpp.o /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/src/aligner_global_myers_banded.cpp.dp.cpp
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/src/aligner_global_myers_banded.cpp.dp.cpp:19:
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/src/aligner_global_myers_banded.hpp:21:
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/src/aligner_global.hpp:23:
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/include/claraparabricks/genomeworks/cudaaligner/aligner.hpp:22:
+/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/allocator.hpp:118:67: warning: braces around scalar initializer [-Wbraced-scalar-init]
+                     const std::vector<sycl::queue *> &streams = {{0}}) try {
+                                                                  ^~~
+/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/allocator.hpp:244:67: warning: braces around scalar initializer [-Wbraced-scalar-init]
+                     const std::vector<sycl::queue *> &streams = {{0}}) try {
+                                                                  ^~~
+2 warnings generated.
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/src/aligner_global_myers_banded.cpp.dp.cpp:19:
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/src/aligner_global_myers_banded.hpp:21:
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/src/aligner_global.hpp:23:
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/include/claraparabricks/genomeworks/cudaaligner/aligner.hpp:22:
+/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/allocator.hpp:118:67: warning: braces around scalar initializer [-Wbraced-scalar-init]
+                     const std::vector<sycl::queue *> &streams = {{0}}) try {
+                                                                  ^~~
+/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/allocator.hpp:244:67: warning: braces around scalar initializer [-Wbraced-scalar-init]
+                     const std::vector<sycl::queue *> &streams = {{0}}) try {
+                                                                  ^~~
+2 warnings generated.
+++ dpcpp -c -DGW_ENABLE_CACHING_ALLOCATOR -I/opt/intel/oneapi/intelpython/python3.9/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/3rdparty/spdlog/include -isystem /home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/cub -fopenmp -O3 -DNDEBUG -std=c++20 -Wno-tautological-constant-compare -DPSTL_USE_PARALLEL_POLICIES=0 -o /home/tianchen/racon/migrated/build/_deps/genomeworks-build/cudaaligner/CMakeFiles/cudaaligner.dir/src/aligner_global_hirschberg_myers.cpp.dp.cpp.o /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/src/aligner_global_hirschberg_myers.cpp.dp.cpp
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/src/aligner_global_hirschberg_myers.cpp.dp.cpp:19:
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/src/aligner_global_hirschberg_myers.hpp:21:
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/src/aligner_global.hpp:23:
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/include/claraparabricks/genomeworks/cudaaligner/aligner.hpp:22:
+/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/allocator.hpp:118:67: warning: braces around scalar initializer [-Wbraced-scalar-init]
+                     const std::vector<sycl::queue *> &streams = {{0}}) try {
+                                                                  ^~~
+/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/allocator.hpp:244:67: warning: braces around scalar initializer [-Wbraced-scalar-init]
+                     const std::vector<sycl::queue *> &streams = {{0}}) try {
+                                                                  ^~~
+2 warnings generated.
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/src/aligner_global_hirschberg_myers.cpp.dp.cpp:19:
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/src/aligner_global_hirschberg_myers.hpp:21:
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/src/aligner_global.hpp:23:
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/include/claraparabricks/genomeworks/cudaaligner/aligner.hpp:22:
+/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/allocator.hpp:118:67: warning: braces around scalar initializer [-Wbraced-scalar-init]
+                     const std::vector<sycl::queue *> &streams = {{0}}) try {
+                                                                  ^~~
+/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/allocator.hpp:244:67: warning: braces around scalar initializer [-Wbraced-scalar-init]
+                     const std::vector<sycl::queue *> &streams = {{0}}) try {
+                                                                  ^~~
+2 warnings generated.
+++ dpcpp -c -DGW_ENABLE_CACHING_ALLOCATOR -I/opt/intel/oneapi/intelpython/python3.9/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/3rdparty/spdlog/include -isystem /home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/cub -fopenmp -O3 -DNDEBUG -std=c++20 -Wno-tautological-constant-compare -DPSTL_USE_PARALLEL_POLICIES=0 -o /home/tianchen/racon/migrated/build/_deps/genomeworks-build/cudaaligner/CMakeFiles/cudaaligner.dir/src/needleman_wunsch_cpu.cpp.o /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/src/needleman_wunsch_cpu.cpp
+++ dpcpp -c -DGW_ENABLE_CACHING_ALLOCATOR -I/opt/intel/oneapi/intelpython/python3.9/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/3rdparty/spdlog/include -isystem /home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/cub -fopenmp -O3 -DNDEBUG -std=c++20 -Wno-tautological-constant-compare -DPSTL_USE_PARALLEL_POLICIES=0 -o /home/tianchen/racon/migrated/build/_deps/genomeworks-build/cudaaligner/CMakeFiles/cudaaligner.dir/src/ukkonen_cpu.cpp.dp.cpp.o /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/src/ukkonen_cpu.cpp.dp.cpp
+++ ar qc /home/tianchen/racon/migrated/build/lib/libcudaaligner.a /home/tianchen/racon/migrated/build/_deps/genomeworks-build/cudaaligner/CMakeFiles/cudaaligner.dir/src/cudaaligner.cpp.o /home/tianchen/racon/migrated/build/_deps/genomeworks-build/cudaaligner/CMakeFiles/cudaaligner.dir/src/aligner.cpp.dp.cpp.o /home/tianchen/racon/migrated/build/_deps/genomeworks-build/cudaaligner/CMakeFiles/cudaaligner.dir/src/alignment.cpp.o /home/tianchen/racon/migrated/build/_deps/genomeworks-build/cudaaligner/CMakeFiles/cudaaligner.dir/src/alignment_impl.cpp.o /home/tianchen/racon/migrated/build/_deps/genomeworks-build/cudaaligner/CMakeFiles/cudaaligner.dir/src/aligner_global.cpp.dp.cpp.o /home/tianchen/racon/migrated/build/_deps/genomeworks-build/cudaaligner/CMakeFiles/cudaaligner.dir/src/aligner_global_ukkonen.cpp.dp.cpp.o /home/tianchen/racon/migrated/build/_deps/genomeworks-build/cudaaligner/CMakeFiles/cudaaligner.dir/src/aligner_global_myers.cpp.dp.cpp.o /home/tianchen/racon/migrated/build/_deps/genomeworks-build/cudaaligner/CMakeFiles/cudaaligner.dir/src/aligner_global_myers_banded.cpp.dp.cpp.o /home/tianchen/racon/migrated/build/_deps/genomeworks-build/cudaaligner/CMakeFiles/cudaaligner.dir/src/aligner_global_hirschberg_myers.cpp.dp.cpp.o /home/tianchen/racon/migrated/build/_deps/genomeworks-build/cudaaligner/CMakeFiles/cudaaligner.dir/src/needleman_wunsch_cpu.cpp.o /home/tianchen/racon/migrated/build/_deps/genomeworks-build/cudaaligner/CMakeFiles/cudaaligner.dir/src/ukkonen_cpu.cpp.dp.cpp.o /home/tianchen/racon/migrated/build/_deps/genomeworks-build/cudaaligner/CMakeFiles/cudaaligner.dir/src/cudaaligner_generated_ukkonen_gpu..dp.cpp.o /home/tianchen/racon/migrated/build/_deps/genomeworks-build/cudaaligner/CMakeFiles/cudaaligner.dir/src/cudaaligner_generated_myers_gpu..dp.cpp.o /home/tianchen/racon/migrated/build/_deps/genomeworks-build/cudaaligner/CMakeFiles/cudaaligner.dir/src/cudaaligner_generated_hirschberg_myers_gpu..dp.cpp.o
+++ dpcpp -c -DDLIB_BUILD -I/home/tianchen/racon/migrated/build/_deps/edlib-src/edlib/include -Wold-style-cast -Wshadow -O3 -DNDEBUG -std=c++20 -Wno-tautological-constant-compare -DPSTL_USE_PARALLEL_POLICIES=0 -o /home/tianchen/racon/migrated/build/_deps/edlib-build/CMakeFiles/edlib.dir/edlib/src/edlib.cpp.dp.cpp.o /home/tianchen/racon/migrated/build/_deps/edlib-src/edlib/src/edlib.cpp.dp.cpp
+In file included from /home/tianchen/racon/migrated/build/_deps/edlib-src/edlib/src/edlib.cpp.dp.cpp:2:
+In file included from /opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/dpct.hpp:21:
+In file included from /opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/image.hpp:14:
+/opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/memory.hpp:84:9: warning: use of old-style cast [-Wold-style-cast]
+        (byte_t *)mmap(nullptr, mapped_region_size, PROT_NONE,
+        ^         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/memory.hpp:184:33: warning: use of old-style cast [-Wold-style-cast]
+    auto it = m_map.upper_bound((byte_t *)ptr);
+                                ^         ~~~
+/opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/memory.hpp:282:33: warning: use of old-style cast [-Wold-style-cast]
+  unsigned char *data_surface = (unsigned char *)data.get_data_ptr();
+                                ^                ~~~~~~~~~~~~~~~~~~~
+/opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/memory.hpp:455:31: warning: use of old-style cast [-Wold-style-cast]
+  unsigned char *to_surface = (unsigned char *)to_ptr +
+                              ^                ~~~~~~
+/opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/memory.hpp:459:7: warning: use of old-style cast [-Wold-style-cast]
+      (const unsigned char *)from_ptr + from_id.get(2) * from_slice +
+      ^                      ~~~~~~~~
+/opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/memory.hpp:467:20: warning: declaration shadows a local variable [-Wshadow]
+    unsigned char *to_ptr = to_surface;
+                   ^
+/opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/memory.hpp:447:39: note: previous declaration is here
+dpct_memcpy(cl::sycl::queue &q, void *to_ptr, const void *from_ptr,
+                                      ^
+/opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/memory.hpp:468:26: warning: declaration shadows a local variable [-Wshadow]
+    const unsigned char *from_ptr = from_surface;
+                         ^
+/opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/memory.hpp:447:59: note: previous declaration is here
+dpct_memcpy(cl::sycl::queue &q, void *to_ptr, const void *from_ptr,
+                                                          ^
+/opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/memory.hpp:532:21: warning: use of old-style cast [-Wold-style-cast]
+    size_t offset = (byte_t *)ptr - alloc.alloc_ptr;
+                    ^         ~~~
+/opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/memory.hpp:570:14: warning: use of old-style cast [-Wold-style-cast]
+    offset = (byte_t *)ptr - alloc.alloc_ptr;
+             ^         ~~~
+/opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/memory.hpp:576:42: warning: use of old-style cast [-Wold-style-cast]
+  dataT get_raw_pointer() const { return (dataT)(&accessor[0] + offset); }
+                                         ^      ~~~~~~~~~~~~~~~~~~~~~~~
+/opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/memory.hpp:615:10: warning: use of old-style cast [-Wold-style-cast]
+  return (T *)(host_ptr + BufferOffset.second);
+         ^    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/memory.hpp:974:17: warning: use of old-style cast [-Wold-style-cast]
+    _host_ptr = (value_t *)std::malloc(_size);
+                ^          ~~~~~~~~~~~~~~~~~~
+/opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/memory.hpp:986:17: warning: use of old-style cast [-Wold-style-cast]
+    _host_ptr = (value_t *)std::malloc(_size);
+                ^          ~~~~~~~~~~~~~~~~~~
+/opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/memory.hpp:1083:28: warning: use of old-style cast [-Wold-style-cast]
+    return dpct_accessor_t((T *)_device_ptr, _range);
+                           ^    ~~~~~~~~~~~
+/opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/memory.hpp:1095:21: warning: use of old-style cast [-Wold-style-cast]
+      _device_ptr = (value_t *)cl::sycl::malloc_shared(
+                    ^          ~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/memory.hpp:1100:19: warning: use of old-style cast [-Wold-style-cast]
+    _device_ptr = (value_t *)detail::dpct_malloc(_size, q);
+                  ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/tianchen/racon/migrated/build/_deps/edlib-src/edlib/src/edlib.cpp.dp.cpp:2:
+In file included from /opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/dpct.hpp:21:
+In file included from /opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/image.hpp:15:
+/opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/util.hpp:43:34: warning: use of old-style cast [-Wold-style-cast]
+      detail::dpct_memcpy(queue, (void *)to_ptr, (void *)from_ptr,
+                                 ^       ~~~~~~
+/opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/util.hpp:43:50: warning: use of old-style cast [-Wold-style-cast]
+      detail::dpct_memcpy(queue, (void *)to_ptr, (void *)from_ptr,
+                                                 ^       ~~~~~~~~
+/opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/util.hpp:46:34: warning: use of old-style cast [-Wold-style-cast]
+      detail::dpct_memcpy(queue, (void *)to_ptr, (void *)from_ptr,
+                                 ^       ~~~~~~
+/opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/util.hpp:46:50: warning: use of old-style cast [-Wold-style-cast]
+      detail::dpct_memcpy(queue, (void *)to_ptr, (void *)from_ptr,
+                                                 ^       ~~~~~~~~
+/opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/util.hpp:78:19: warning: use of old-style cast [-Wold-style-cast]
+  matrix_mem_copy((void *)to_ptr, (void *)from_ptr, to_ld, from_ld, rows, cols,
+                  ^       ~~~~~~
+/opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/util.hpp:78:35: warning: use of old-style cast [-Wold-style-cast]
+  matrix_mem_copy((void *)to_ptr, (void *)from_ptr, to_ld, from_ld, rows, cols,
+                                  ^       ~~~~~~~~
+/opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/util.hpp:225:10: warning: use of old-style cast [-Wold-style-cast]
+      ((((std::uint64_t)b << 32 | a) >> (s & 0x7) * 8) & 0xff) |
+         ^              ~
+/opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/util.hpp:226:11: warning: use of old-style cast [-Wold-style-cast]
+      (((((std::uint64_t)b << 32 | a) >> ((s >> 4) & 0x7) * 8) & 0xff) << 8) |
+          ^              ~
+/opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/util.hpp:227:11: warning: use of old-style cast [-Wold-style-cast]
+      (((((std::uint64_t)b << 32 | a) >> ((s >> 8) & 0x7) * 8) & 0xff) << 16) |
+          ^              ~
+/opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/util.hpp:228:11: warning: use of old-style cast [-Wold-style-cast]
+      (((((std::uint64_t)b << 32 | a) >> ((s >> 12) & 0x7) * 8) & 0xff) << 24);
+          ^              ~
+In file included from /home/tianchen/racon/migrated/build/_deps/edlib-src/edlib/src/edlib.cpp.dp.cpp:2:
+In file included from /opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/dpct.hpp:21:
+/opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/image.hpp:104:12: warning: use of old-style cast [-Wold-style-cast]
+    return (return_t)original_data.r();
+           ^         ~~~~~~~~~~~~~~~~~
+/opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/image.hpp:766:19: warning: use of old-style cast [-Wold-style-cast]
+    auto matrix = (image_matrix_p)data.get_data_ptr();
+                  ^               ~~~~~~~~~~~~~~~~~~~
+28 warnings generated.
+In file included from /home/tianchen/racon/migrated/build/_deps/edlib-src/edlib/src/edlib.cpp.dp.cpp:2:
+In file included from /opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/dpct.hpp:21:
+In file included from /opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/image.hpp:14:
+/opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/memory.hpp:84:9: warning: use of old-style cast [-Wold-style-cast]
+        (byte_t *)mmap(nullptr, mapped_region_size, PROT_NONE,
+        ^         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/memory.hpp:184:33: warning: use of old-style cast [-Wold-style-cast]
+    auto it = m_map.upper_bound((byte_t *)ptr);
+                                ^         ~~~
+/opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/memory.hpp:282:33: warning: use of old-style cast [-Wold-style-cast]
+  unsigned char *data_surface = (unsigned char *)data.get_data_ptr();
+                                ^                ~~~~~~~~~~~~~~~~~~~
+/opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/memory.hpp:455:31: warning: use of old-style cast [-Wold-style-cast]
+  unsigned char *to_surface = (unsigned char *)to_ptr +
+                              ^                ~~~~~~
+/opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/memory.hpp:459:7: warning: use of old-style cast [-Wold-style-cast]
+      (const unsigned char *)from_ptr + from_id.get(2) * from_slice +
+      ^                      ~~~~~~~~
+/opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/memory.hpp:467:20: warning: declaration shadows a local variable [-Wshadow]
+    unsigned char *to_ptr = to_surface;
+                   ^
+/opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/memory.hpp:447:39: note: previous declaration is here
+dpct_memcpy(cl::sycl::queue &q, void *to_ptr, const void *from_ptr,
+                                      ^
+/opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/memory.hpp:468:26: warning: declaration shadows a local variable [-Wshadow]
+    const unsigned char *from_ptr = from_surface;
+                         ^
+/opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/memory.hpp:447:59: note: previous declaration is here
+dpct_memcpy(cl::sycl::queue &q, void *to_ptr, const void *from_ptr,
+                                                          ^
+/opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/memory.hpp:532:21: warning: use of old-style cast [-Wold-style-cast]
+    size_t offset = (byte_t *)ptr - alloc.alloc_ptr;
+                    ^         ~~~
+/opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/memory.hpp:570:14: warning: use of old-style cast [-Wold-style-cast]
+    offset = (byte_t *)ptr - alloc.alloc_ptr;
+             ^         ~~~
+/opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/memory.hpp:576:42: warning: use of old-style cast [-Wold-style-cast]
+  dataT get_raw_pointer() const { return (dataT)(&accessor[0] + offset); }
+                                         ^      ~~~~~~~~~~~~~~~~~~~~~~~
+/opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/memory.hpp:615:10: warning: use of old-style cast [-Wold-style-cast]
+  return (T *)(host_ptr + BufferOffset.second);
+         ^    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/memory.hpp:974:17: warning: use of old-style cast [-Wold-style-cast]
+    _host_ptr = (value_t *)std::malloc(_size);
+                ^          ~~~~~~~~~~~~~~~~~~
+/opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/memory.hpp:986:17: warning: use of old-style cast [-Wold-style-cast]
+    _host_ptr = (value_t *)std::malloc(_size);
+                ^          ~~~~~~~~~~~~~~~~~~
+/opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/memory.hpp:1083:28: warning: use of old-style cast [-Wold-style-cast]
+    return dpct_accessor_t((T *)_device_ptr, _range);
+                           ^    ~~~~~~~~~~~
+/opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/memory.hpp:1095:21: warning: use of old-style cast [-Wold-style-cast]
+      _device_ptr = (value_t *)cl::sycl::malloc_shared(
+                    ^          ~~~~~~~~~~~~~~~~~~~~~~~~
+/opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/memory.hpp:1100:19: warning: use of old-style cast [-Wold-style-cast]
+    _device_ptr = (value_t *)detail::dpct_malloc(_size, q);
+                  ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/tianchen/racon/migrated/build/_deps/edlib-src/edlib/src/edlib.cpp.dp.cpp:2:
+In file included from /opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/dpct.hpp:21:
+In file included from /opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/image.hpp:15:
+/opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/util.hpp:43:34: warning: use of old-style cast [-Wold-style-cast]
+      detail::dpct_memcpy(queue, (void *)to_ptr, (void *)from_ptr,
+                                 ^       ~~~~~~
+/opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/util.hpp:43:50: warning: use of old-style cast [-Wold-style-cast]
+      detail::dpct_memcpy(queue, (void *)to_ptr, (void *)from_ptr,
+                                                 ^       ~~~~~~~~
+/opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/util.hpp:46:34: warning: use of old-style cast [-Wold-style-cast]
+      detail::dpct_memcpy(queue, (void *)to_ptr, (void *)from_ptr,
+                                 ^       ~~~~~~
+/opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/util.hpp:46:50: warning: use of old-style cast [-Wold-style-cast]
+      detail::dpct_memcpy(queue, (void *)to_ptr, (void *)from_ptr,
+                                                 ^       ~~~~~~~~
+/opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/util.hpp:78:19: warning: use of old-style cast [-Wold-style-cast]
+  matrix_mem_copy((void *)to_ptr, (void *)from_ptr, to_ld, from_ld, rows, cols,
+                  ^       ~~~~~~
+/opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/util.hpp:78:35: warning: use of old-style cast [-Wold-style-cast]
+  matrix_mem_copy((void *)to_ptr, (void *)from_ptr, to_ld, from_ld, rows, cols,
+                                  ^       ~~~~~~~~
+/opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/util.hpp:225:10: warning: use of old-style cast [-Wold-style-cast]
+      ((((std::uint64_t)b << 32 | a) >> (s & 0x7) * 8) & 0xff) |
+         ^              ~
+/opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/util.hpp:226:11: warning: use of old-style cast [-Wold-style-cast]
+      (((((std::uint64_t)b << 32 | a) >> ((s >> 4) & 0x7) * 8) & 0xff) << 8) |
+          ^              ~
+/opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/util.hpp:227:11: warning: use of old-style cast [-Wold-style-cast]
+      (((((std::uint64_t)b << 32 | a) >> ((s >> 8) & 0x7) * 8) & 0xff) << 16) |
+          ^              ~
+/opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/util.hpp:228:11: warning: use of old-style cast [-Wold-style-cast]
+      (((((std::uint64_t)b << 32 | a) >> ((s >> 12) & 0x7) * 8) & 0xff) << 24);
+          ^              ~
+In file included from /home/tianchen/racon/migrated/build/_deps/edlib-src/edlib/src/edlib.cpp.dp.cpp:2:
+In file included from /opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/dpct.hpp:21:
+/opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/image.hpp:104:12: warning: use of old-style cast [-Wold-style-cast]
+    return (return_t)original_data.r();
+           ^         ~~~~~~~~~~~~~~~~~
+/opt/intel/oneapi/dpcpp-ct/2022.0.0/include/dpct/image.hpp:766:19: warning: use of old-style cast [-Wold-style-cast]
+    auto matrix = (image_matrix_p)data.get_data_ptr();
+                  ^               ~~~~~~~~~~~~~~~~~~~
+28 warnings generated.
+++ ar qc /home/tianchen/racon/migrated/build/lib/libedlib.a /home/tianchen/racon/migrated/build/_deps/edlib-build/CMakeFiles/edlib.dir/edlib/src/edlib.cpp.dp.cpp.o
+++ dpcpp -c -I/home/tianchen/racon/migrated/build/_deps/spoa-src/include -Wno-aligned-new -Wno-ignored-attributes -O3 -DNDEBUG -std=c++20 -Wno-tautological-constant-compare -DPSTL_USE_PARALLEL_POLICIES=0 -o /home/tianchen/racon/migrated/build/_deps/spoa-build/CMakeFiles/spoa.dir/src/alignment_engine.cpp.dp.cpp.o /home/tianchen/racon/migrated/build/_deps/spoa-src/src/alignment_engine.cpp.dp.cpp
+warning: unknown warning option '-Wno-aligned-new' [-Wunknown-warning-option]
+1 warning generated.
+warning: unknown warning option '-Wno-aligned-new' [-Wunknown-warning-option]
+1 warning generated.
+++ dpcpp -c -I/home/tianchen/racon/migrated/build/_deps/spoa-src/include -Wno-aligned-new -Wno-ignored-attributes -O3 -DNDEBUG -std=c++20 -Wno-tautological-constant-compare -DPSTL_USE_PARALLEL_POLICIES=0 -o /home/tianchen/racon/migrated/build/_deps/spoa-build/CMakeFiles/spoa.dir/src/graph.cpp.o /home/tianchen/racon/migrated/build/_deps/spoa-src/src/graph.cpp
+warning: unknown warning option '-Wno-aligned-new' [-Wunknown-warning-option]
+1 warning generated.
+warning: unknown warning option '-Wno-aligned-new' [-Wunknown-warning-option]
+1 warning generated.
+++ dpcpp -c -I/home/tianchen/racon/migrated/build/_deps/spoa-src/include -Wno-aligned-new -Wno-ignored-attributes -O3 -DNDEBUG -std=c++20 -Wno-tautological-constant-compare -DPSTL_USE_PARALLEL_POLICIES=0 -o /home/tianchen/racon/migrated/build/_deps/spoa-build/CMakeFiles/spoa.dir/src/simd_alignment_engine_dispatcher.cpp.o /home/tianchen/racon/migrated/build/_deps/spoa-src/src/simd_alignment_engine_dispatcher.cpp
+warning: unknown warning option '-Wno-aligned-new' [-Wunknown-warning-option]
+1 warning generated.
+warning: unknown warning option '-Wno-aligned-new' [-Wunknown-warning-option]
+1 warning generated.
+++ dpcpp -c -I/home/tianchen/racon/migrated/build/_deps/spoa-src/include -Wno-aligned-new -Wno-ignored-attributes -O3 -DNDEBUG -std=c++20 -Wno-tautological-constant-compare -DPSTL_USE_PARALLEL_POLICIES=0 -o /home/tianchen/racon/migrated/build/_deps/spoa-build/CMakeFiles/spoa.dir/src/sisd_alignment_engine.cpp.dp.cpp.o /home/tianchen/racon/migrated/build/_deps/spoa-src/src/sisd_alignment_engine.cpp.dp.cpp
+warning: unknown warning option '-Wno-aligned-new' [-Wunknown-warning-option]
+1 warning generated.
+warning: unknown warning option '-Wno-aligned-new' [-Wunknown-warning-option]
+1 warning generated.
+++ ar qc /home/tianchen/racon/migrated/build/_deps/spoa-build/lib/libspoa.a /home/tianchen/racon/migrated/build/_deps/spoa-build/CMakeFiles/spoa.dir/src/alignment_engine.cpp.dp.cpp.o /home/tianchen/racon/migrated/build/_deps/spoa-build/CMakeFiles/spoa.dir/src/graph.cpp.o /home/tianchen/racon/migrated/build/_deps/spoa-build/CMakeFiles/spoa.dir/src/simd_alignment_engine_dispatcher.cpp.o /home/tianchen/racon/migrated/build/_deps/spoa-build/CMakeFiles/spoa.dir/src/sisd_alignment_engine.cpp.dp.cpp.o
+++ dpcpp -c -DGW_ENABLE_CACHING_ALLOCATOR -I/opt/intel/oneapi/intelpython/python3.9/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/3rdparty/kseqpp/src -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/io/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/3rdparty/spdlog/include -fopenmp -O3 -DNDEBUG -Wno-tautological-constant-compare -DPSTL_USE_PARALLEL_POLICIES=0 -o /home/tianchen/racon/migrated/build/_deps/genomeworks-build/common/io/CMakeFiles/gwio.dir/src/fasta_parser.cpp.o /home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/io/src/fasta_parser.cpp
+++ dpcpp -c -DGW_ENABLE_CACHING_ALLOCATOR -I/opt/intel/oneapi/intelpython/python3.9/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/3rdparty/kseqpp/src -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/io/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/3rdparty/spdlog/include -fopenmp -O3 -DNDEBUG -Wno-tautological-constant-compare -DPSTL_USE_PARALLEL_POLICIES=0 -o /home/tianchen/racon/migrated/build/_deps/genomeworks-build/common/io/CMakeFiles/gwio.dir/src/kseqpp_fasta_parser.cpp.o /home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/io/src/kseqpp_fasta_parser.cpp
+++ ar qc /home/tianchen/racon/migrated/build/lib/libgwio.a /home/tianchen/racon/migrated/build/_deps/genomeworks-build/common/io/CMakeFiles/gwio.dir/src/fasta_parser.cpp.o /home/tianchen/racon/migrated/build/_deps/genomeworks-build/common/io/CMakeFiles/gwio.dir/src/kseqpp_fasta_parser.cpp.o
+++ dpcpp -c -Wno-tautological-constant-compare -DPSTL_USE_PARALLEL_POLICIES=0 -o /home/tianchen/racon/migrated/build/_deps/genomeworks-build/cudapoa/CMakeFiles/cudapoa.dir/src/cudapoa_generated_utils..dp.cpp.o -m64 -DGW_ENABLE_CACHING_ALLOCATOR -fopenmp -O3 -DNDEBUG -Wno-pedantic -std=c++20 -DNVCC -I/opt/intel/oneapi/intelpython/python3.9/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudapoa/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/3rdparty/spdlog/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/io/include -D__CUDACC__=1 /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudapoa/src/utils.dp.cpp
+++ dpcpp -c -Wno-tautological-constant-compare -DPSTL_USE_PARALLEL_POLICIES=0 -o /home/tianchen/racon/migrated/build/_deps/genomeworks-build/cudapoa/CMakeFiles/cudapoa.dir/src/cudapoa_generated_batch..dp.cpp.o -m64 -DGW_ENABLE_CACHING_ALLOCATOR -fopenmp -O3 -DNDEBUG -Wno-pedantic -std=c++20 -DNVCC -I/opt/intel/oneapi/intelpython/python3.9/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudapoa/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/3rdparty/spdlog/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/io/include -D__CUDACC__=1 /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudapoa/src/batch.dp.cpp
+++ dpcpp -c -DGW_ENABLE_CACHING_ALLOCATOR -I/opt/intel/oneapi/intelpython/python3.9/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudapoa/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/3rdparty/spdlog/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/io/include -fopenmp -O3 -DNDEBUG -std=c++20 -Wno-tautological-constant-compare -DPSTL_USE_PARALLEL_POLICIES=0 -o /home/tianchen/racon/migrated/build/_deps/genomeworks-build/cudapoa/CMakeFiles/cudapoa.dir/src/cudapoa.cpp.o /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudapoa/src/cudapoa.cpp
+++ dpcpp -c -DGW_ENABLE_CACHING_ALLOCATOR -I/opt/intel/oneapi/intelpython/python3.9/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudapoa/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/3rdparty/spdlog/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/io/include -fopenmp -O3 -DNDEBUG -std=c++20 -Wno-tautological-constant-compare -DPSTL_USE_PARALLEL_POLICIES=0 -o /home/tianchen/racon/migrated/build/_deps/genomeworks-build/cudapoa/CMakeFiles/cudapoa.dir/version.cpp.o /home/tianchen/racon/migrated/build/_deps/genomeworks-build/cudapoa/version.cpp
+++ ar qc /home/tianchen/racon/migrated/build/lib/libcudapoa.a /home/tianchen/racon/migrated/build/_deps/genomeworks-build/cudapoa/CMakeFiles/cudapoa.dir/src/cudapoa.cpp.o /home/tianchen/racon/migrated/build/_deps/genomeworks-build/cudapoa/CMakeFiles/cudapoa.dir/version.cpp.o /home/tianchen/racon/migrated/build/_deps/genomeworks-build/cudapoa/CMakeFiles/cudapoa.dir/src/cudapoa_generated_batch..dp.cpp.o /home/tianchen/racon/migrated/build/_deps/genomeworks-build/cudapoa/CMakeFiles/cudapoa.dir/src/cudapoa_generated_utils..dp.cpp.o
+++ dpcpp -c -DCUDA_ENABLED -DGW_ENABLE_CACHING_ALLOCATOR -I/home/tianchen/racon/migrated/src -I/home/tianchen/racon/migrated/build/_deps/bioparser-src/include -I/home/tianchen/racon/migrated/build/_deps/edlib-src/edlib/include -I/home/tianchen/racon/migrated/build/_deps/spoa-src/include -I/home/tianchen/racon/migrated/build/_deps/thread_pool-src/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudapoa/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/3rdparty/spdlog/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/io/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/include -isystem /home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/cub -O3 -DNDEBUG -pthread -std=c++20 -Wno-tautological-constant-compare -DPSTL_USE_PARALLEL_POLICIES=0 -o /home/tianchen/racon/migrated/build/CMakeFiles/racon.dir/src/polisher.cpp.dp.cpp.o /home/tianchen/racon/migrated/src/polisher.cpp.dp.cpp
+In file included from /home/tianchen/racon/migrated/src/polisher.cpp.dp.cpp:19:
+In file included from /home/tianchen/racon/migrated/src/cuda/cudapolisher.hpp:13:
+In file included from /home/tianchen/racon/migrated/src/cuda/cudaaligner.hpp:9:
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/include/claraparabricks/genomeworks/cudaaligner/aligner.hpp:22:
+/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/allocator.hpp:118:67: warning: braces around scalar initializer [-Wbraced-scalar-init]
+                     const std::vector<sycl::queue *> &streams = {{0}}) try {
+                                                                  ^~~
+/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/allocator.hpp:244:67: warning: braces around scalar initializer [-Wbraced-scalar-init]
+                     const std::vector<sycl::queue *> &streams = {{0}}) try {
+                                                                  ^~~
+2 warnings generated.
+In file included from /home/tianchen/racon/migrated/src/polisher.cpp.dp.cpp:19:
+In file included from /home/tianchen/racon/migrated/src/cuda/cudapolisher.hpp:13:
+In file included from /home/tianchen/racon/migrated/src/cuda/cudaaligner.hpp:9:
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/include/claraparabricks/genomeworks/cudaaligner/aligner.hpp:22:
+/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/allocator.hpp:118:67: warning: braces around scalar initializer [-Wbraced-scalar-init]
+                     const std::vector<sycl::queue *> &streams = {{0}}) try {
+                                                                  ^~~
+/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/allocator.hpp:244:67: warning: braces around scalar initializer [-Wbraced-scalar-init]
+                     const std::vector<sycl::queue *> &streams = {{0}}) try {
+                                                                  ^~~
+2 warnings generated.
+++ dpcpp -c -DCUDA_ENABLED -DGW_ENABLE_CACHING_ALLOCATOR -I/home/tianchen/racon/migrated/src -I/home/tianchen/racon/migrated/build/_deps/bioparser-src/include -I/home/tianchen/racon/migrated/build/_deps/edlib-src/edlib/include -I/home/tianchen/racon/migrated/build/_deps/spoa-src/include -I/home/tianchen/racon/migrated/build/_deps/thread_pool-src/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudapoa/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/3rdparty/spdlog/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/io/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/include -isystem /home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/cub -O3 -DNDEBUG -pthread -std=c++20 -Wno-tautological-constant-compare -DPSTL_USE_PARALLEL_POLICIES=0 -o /home/tianchen/racon/migrated/build/CMakeFiles/racon.dir/src/overlap.cpp.o /home/tianchen/racon/migrated/src/overlap.cpp
+++ dpcpp -c -DCUDA_ENABLED -DGW_ENABLE_CACHING_ALLOCATOR -I/home/tianchen/racon/migrated/src -I/home/tianchen/racon/migrated/build/_deps/bioparser-src/include -I/home/tianchen/racon/migrated/build/_deps/edlib-src/edlib/include -I/home/tianchen/racon/migrated/build/_deps/spoa-src/include -I/home/tianchen/racon/migrated/build/_deps/thread_pool-src/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudapoa/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/3rdparty/spdlog/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/io/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/include -isystem /home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/cub -O3 -DNDEBUG -pthread -std=c++20 -Wno-tautological-constant-compare -DPSTL_USE_PARALLEL_POLICIES=0 -o /home/tianchen/racon/migrated/build/CMakeFiles/racon.dir/src/sequence.cpp.o /home/tianchen/racon/migrated/src/sequence.cpp
+++ dpcpp -c -DCUDA_ENABLED -DGW_ENABLE_CACHING_ALLOCATOR -I/home/tianchen/racon/migrated/src -I/home/tianchen/racon/migrated/build/_deps/bioparser-src/include -I/home/tianchen/racon/migrated/build/_deps/edlib-src/edlib/include -I/home/tianchen/racon/migrated/build/_deps/spoa-src/include -I/home/tianchen/racon/migrated/build/_deps/thread_pool-src/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudapoa/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/3rdparty/spdlog/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/io/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/include -isystem /home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/cub -O3 -DNDEBUG -pthread -std=c++20 -Wno-tautological-constant-compare -DPSTL_USE_PARALLEL_POLICIES=0 -o /home/tianchen/racon/migrated/build/CMakeFiles/racon.dir/src/window.cpp.o /home/tianchen/racon/migrated/src/window.cpp
+++ dpcpp -c -DCUDA_ENABLED -DGW_ENABLE_CACHING_ALLOCATOR -I/home/tianchen/racon/migrated/src -I/home/tianchen/racon/migrated/build/_deps/bioparser-src/include -I/home/tianchen/racon/migrated/build/_deps/edlib-src/edlib/include -I/home/tianchen/racon/migrated/build/_deps/spoa-src/include -I/home/tianchen/racon/migrated/build/_deps/thread_pool-src/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudapoa/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/3rdparty/spdlog/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/io/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/include -isystem /home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/cub -O3 -DNDEBUG -pthread -std=c++20 -Wno-tautological-constant-compare -DPSTL_USE_PARALLEL_POLICIES=0 -o /home/tianchen/racon/migrated/build/CMakeFiles/racon.dir/src/cuda/cudapolisher.cpp.dp.cpp.o /home/tianchen/racon/migrated/src/cuda/cudapolisher.cpp.dp.cpp
+In file included from /home/tianchen/racon/migrated/src/cuda/cudapolisher.cpp.dp.cpp:15:
+In file included from /home/tianchen/racon/migrated/src/cuda/cudapolisher.hpp:13:
+In file included from /home/tianchen/racon/migrated/src/cuda/cudaaligner.hpp:9:
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/include/claraparabricks/genomeworks/cudaaligner/aligner.hpp:22:
+/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/allocator.hpp:118:67: warning: braces around scalar initializer [-Wbraced-scalar-init]
+                     const std::vector<sycl::queue *> &streams = {{0}}) try {
+                                                                  ^~~
+/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/allocator.hpp:244:67: warning: braces around scalar initializer [-Wbraced-scalar-init]
+                     const std::vector<sycl::queue *> &streams = {{0}}) try {
+                                                                  ^~~
+2 warnings generated.
+In file included from /home/tianchen/racon/migrated/src/cuda/cudapolisher.cpp.dp.cpp:15:
+In file included from /home/tianchen/racon/migrated/src/cuda/cudapolisher.hpp:13:
+In file included from /home/tianchen/racon/migrated/src/cuda/cudaaligner.hpp:9:
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/include/claraparabricks/genomeworks/cudaaligner/aligner.hpp:22:
+/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/allocator.hpp:118:67: warning: braces around scalar initializer [-Wbraced-scalar-init]
+                     const std::vector<sycl::queue *> &streams = {{0}}) try {
+                                                                  ^~~
+/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/allocator.hpp:244:67: warning: braces around scalar initializer [-Wbraced-scalar-init]
+                     const std::vector<sycl::queue *> &streams = {{0}}) try {
+                                                                  ^~~
+2 warnings generated.
+++ dpcpp -c -DCUDA_ENABLED -DGW_ENABLE_CACHING_ALLOCATOR -I/home/tianchen/racon/migrated/src -I/home/tianchen/racon/migrated/build/_deps/bioparser-src/include -I/home/tianchen/racon/migrated/build/_deps/edlib-src/edlib/include -I/home/tianchen/racon/migrated/build/_deps/spoa-src/include -I/home/tianchen/racon/migrated/build/_deps/thread_pool-src/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudapoa/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/3rdparty/spdlog/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/io/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/include -isystem /home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/cub -O3 -DNDEBUG -pthread -std=c++20 -Wno-tautological-constant-compare -DPSTL_USE_PARALLEL_POLICIES=0 -o /home/tianchen/racon/migrated/build/CMakeFiles/racon.dir/src/cuda/cudabatch.cpp.dp.cpp.o /home/tianchen/racon/migrated/src/cuda/cudabatch.cpp.dp.cpp
+++ dpcpp -c -DCUDA_ENABLED -DGW_ENABLE_CACHING_ALLOCATOR -I/home/tianchen/racon/migrated/src -I/home/tianchen/racon/migrated/build/_deps/bioparser-src/include -I/home/tianchen/racon/migrated/build/_deps/edlib-src/edlib/include -I/home/tianchen/racon/migrated/build/_deps/spoa-src/include -I/home/tianchen/racon/migrated/build/_deps/thread_pool-src/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudapoa/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/3rdparty/spdlog/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/io/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/include -isystem /home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/cub -O3 -DNDEBUG -pthread -std=c++20 -Wno-tautological-constant-compare -DPSTL_USE_PARALLEL_POLICIES=0 -o /home/tianchen/racon/migrated/build/CMakeFiles/racon.dir/src/cuda/cudaaligner.cpp.dp.cpp.o /home/tianchen/racon/migrated/src/cuda/cudaaligner.cpp.dp.cpp
+In file included from /home/tianchen/racon/migrated/src/cuda/cudaaligner.cpp.dp.cpp:11:
+In file included from /home/tianchen/racon/migrated/src/cuda/cudaaligner.hpp:9:
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/include/claraparabricks/genomeworks/cudaaligner/aligner.hpp:22:
+/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/allocator.hpp:118:67: warning: braces around scalar initializer [-Wbraced-scalar-init]
+                     const std::vector<sycl::queue *> &streams = {{0}}) try {
+                                                                  ^~~
+/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/allocator.hpp:244:67: warning: braces around scalar initializer [-Wbraced-scalar-init]
+                     const std::vector<sycl::queue *> &streams = {{0}}) try {
+                                                                  ^~~
+2 warnings generated.
+In file included from /home/tianchen/racon/migrated/src/cuda/cudaaligner.cpp.dp.cpp:11:
+In file included from /home/tianchen/racon/migrated/src/cuda/cudaaligner.hpp:9:
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/include/claraparabricks/genomeworks/cudaaligner/aligner.hpp:22:
+/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/allocator.hpp:118:67: warning: braces around scalar initializer [-Wbraced-scalar-init]
+                     const std::vector<sycl::queue *> &streams = {{0}}) try {
+                                                                  ^~~
+/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/allocator.hpp:244:67: warning: braces around scalar initializer [-Wbraced-scalar-init]
+                     const std::vector<sycl::queue *> &streams = {{0}}) try {
+                                                                  ^~~
+2 warnings generated.
+++ ar qc /home/tianchen/racon/migrated/build/lib/libracon.a /home/tianchen/racon/migrated/build/CMakeFiles/racon.dir/src/polisher.cpp.dp.cpp.o /home/tianchen/racon/migrated/build/CMakeFiles/racon.dir/src/overlap.cpp.o /home/tianchen/racon/migrated/build/CMakeFiles/racon.dir/src/sequence.cpp.o /home/tianchen/racon/migrated/build/CMakeFiles/racon.dir/src/window.cpp.o /home/tianchen/racon/migrated/build/CMakeFiles/racon.dir/src/cuda/cudapolisher.cpp.dp.cpp.o /home/tianchen/racon/migrated/build/CMakeFiles/racon.dir/src/cuda/cudabatch.cpp.dp.cpp.o /home/tianchen/racon/migrated/build/CMakeFiles/racon.dir/src/cuda/cudaaligner.cpp.dp.cpp.o
+++ dpcpp -c -I/home/tianchen/racon/migrated/build/_deps/googletest-src/googletest/include -I/home/tianchen/racon/migrated/build/_deps/googletest-src/googletest -O3 -DNDEBUG -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wno-unused-parameter -Wno-missing-field-initializers -pthread -std=c++20 -Wno-tautological-constant-compare -DPSTL_USE_PARALLEL_POLICIES=0 -o /home/tianchen/racon/migrated/build/_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o /home/tianchen/racon/migrated/build/_deps/googletest-src/googletest/src/gtest-all.cc
+++ ar qc /home/tianchen/racon/migrated/build/lib/libgtest.a /home/tianchen/racon/migrated/build/_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+++ dpcpp -c -isystem /home/tianchen/racon/build/_deps/googletest-src/googletest/include -isystem /home/tianchen/racon/build/_deps/googletest-src/googletest -O3 -DNDEBUG -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wno-unused-parameter -Wno-missing-field-initializers -pthread -std=c++20 -Wno-tautological-constant-compare -DPSTL_USE_PARALLEL_POLICIES=0 -o /home/tianchen/racon/migrated/build/_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o /home/tianchen/racon/migrated/build/_deps/googletest-src/googletest/src/gtest_main.cc
+++ ar qc /home/tianchen/racon/migrated/build/lib/libgtest_main.a /home/tianchen/racon/migrated/build/_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+++ dpcpp -c -DCUDA_ENABLED -DGW_ENABLE_CACHING_ALLOCATOR '-DTEST_DATA="/home/tianchen/racon/test/data/"' -I/home/tianchen/racon/migrated/src -I/home/tianchen/racon/migrated/build/_deps/bioparser-src/include -I/home/tianchen/racon/migrated/build/_deps/edlib-src/edlib/include -I/home/tianchen/racon/migrated/build/_deps/spoa-src/include -I/home/tianchen/racon/migrated/build/_deps/thread_pool-src/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudapoa/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/3rdparty/spdlog/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/io/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/include -isystem /home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/cub -isystem /home/tianchen/racon/build/_deps/googletest-src/googletest/include -isystem /home/tianchen/racon/build/_deps/googletest-src/googletest -O3 -DNDEBUG -pthread -std=c++20 -Wno-tautological-constant-compare -DPSTL_USE_PARALLEL_POLICIES=0 -o /home/tianchen/racon/migrated/build/CMakeFiles/racon_test.dir/test/racon_test.cpp.o /home/tianchen/racon/migrated/test/racon_test.cpp
+++ dpcpp -o /home/tianchen/racon/migrated/build/bin/racon_test /home/tianchen/racon/migrated/build/CMakeFiles/racon_test.dir/test/racon_test.cpp.o /home/tianchen/racon/migrated/build/lib/libracon.a /home/tianchen/racon/migrated/build/lib/libgtest_main.a /usr/lib/x86_64-linux-gnu/libz.so /home/tianchen/racon/migrated/build/lib/libedlib.a /home/tianchen/racon/migrated/build/_deps/spoa-build/lib/libspoa.a /home/tianchen/racon/migrated/build/lib/libcudapoa.a /home/tianchen/racon/migrated/build/lib/libgwio.a /home/tianchen/racon/migrated/build/lib/libcudaaligner.a /home/tianchen/racon/migrated/build/lib/libgwbase.a /usr/lib/x86_64-linux-gnu/librt.so /home/tianchen/racon/migrated/build/lib/libgtest.a -lpthread
+error: Linking globals named '_ZN15claraparabricks11genomeworks11cudaaligner7kernels28ukkonen_compute_score_matrixEPNS1_23batched_device_matricesIsE16device_interfaceEPKcPKiiiiN2cl4sycl7nd_itemILi3EEE': symbol multiply defined!
+/opt/intel/oneapi/compiler/2022.0.1/linux/bin-llvm/llvm-link: error:  loading file '/tmp/libcudaaligner-b0068c.a'
+dpcpp: error: sycl-link command failed with exit code 1 (use -v to see invocation)
+++ dpcpp -c -DCUDA_ENABLED -DGW_ENABLE_CACHING_ALLOCATOR '-DVERSION="1.5.0"' -I/home/tianchen/racon/migrated/src -I/home/tianchen/racon/migrated/build/_deps/bioparser-src/include -I/home/tianchen/racon/migrated/build/_deps/edlib-src/edlib/include -I/home/tianchen/racon/migrated/build/_deps/spoa-src/include -I/home/tianchen/racon/migrated/build/_deps/thread_pool-src/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudapoa/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/3rdparty/spdlog/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/io/include -I/home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/include -isystem /home/tianchen/racon/build/_deps/genomeworks-src/3rdparty/cub -O3 -DNDEBUG -pthread -std=c++20 -Wno-tautological-constant-compare -DPSTL_USE_PARALLEL_POLICIES=0 -o /home/tianchen/racon/migrated/build/CMakeFiles/racon_exe.dir/src/main.cpp.o /home/tianchen/racon/migrated/src/main.cpp
+In file included from /home/tianchen/racon/migrated/src/main.cpp:12:
+In file included from /home/tianchen/racon/migrated/src/cuda/cudapolisher.hpp:13:
+In file included from /home/tianchen/racon/migrated/src/cuda/cudaaligner.hpp:9:
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/include/claraparabricks/genomeworks/cudaaligner/aligner.hpp:22:
+/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/allocator.hpp:118:67: warning: braces around scalar initializer [-Wbraced-scalar-init]
+                     const std::vector<sycl::queue *> &streams = {{0}}) try {
+                                                                  ^~~
+/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/allocator.hpp:244:67: warning: braces around scalar initializer [-Wbraced-scalar-init]
+                     const std::vector<sycl::queue *> &streams = {{0}}) try {
+                                                                  ^~~
+2 warnings generated.
+In file included from /home/tianchen/racon/migrated/src/main.cpp:12:
+In file included from /home/tianchen/racon/migrated/src/cuda/cudapolisher.hpp:13:
+In file included from /home/tianchen/racon/migrated/src/cuda/cudaaligner.hpp:9:
+In file included from /home/tianchen/racon/migrated/build/_deps/genomeworks-src/cudaaligner/include/claraparabricks/genomeworks/cudaaligner/aligner.hpp:22:
+/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/allocator.hpp:118:67: warning: braces around scalar initializer [-Wbraced-scalar-init]
+                     const std::vector<sycl::queue *> &streams = {{0}}) try {
+                                                                  ^~~
+/home/tianchen/racon/migrated/build/_deps/genomeworks-src/common/base/include/claraparabricks/genomeworks/utils/allocator.hpp:244:67: warning: braces around scalar initializer [-Wbraced-scalar-init]
+                     const std::vector<sycl::queue *> &streams = {{0}}) try {
+                                                                  ^~~
+2 warnings generated.
+++ dpcpp -o /home/tianchen/racon/migrated/build/bin/racon /home/tianchen/racon/migrated/build/CMakeFiles/racon_exe.dir/src/main.cpp.o /home/tianchen/racon/migrated/build/lib/libracon.a /usr/lib/x86_64-linux-gnu/libz.so /home/tianchen/racon/migrated/build/lib/libedlib.a /home/tianchen/racon/migrated/build/_deps/spoa-build/lib/libspoa.a /home/tianchen/racon/migrated/build/lib/libcudapoa.a /home/tianchen/racon/migrated/build/lib/libgwio.a /home/tianchen/racon/migrated/build/lib/libcudaaligner.a /home/tianchen/racon/migrated/build/lib/libgwbase.a /usr/lib/x86_64-linux-gnu/librt.so -lpthread
+error: Linking globals named '_ZN15claraparabricks11genomeworks11cudaaligner7kernels28ukkonen_compute_score_matrixEPNS1_23batched_device_matricesIsE16device_interfaceEPKcPKiiiiN2cl4sycl7nd_itemILi3EEE': symbol multiply defined!
+/opt/intel/oneapi/compiler/2022.0.1/linux/bin-llvm/llvm-link: error:  loading file '/tmp/libcudaaligner-3f0113.a'
+dpcpp: error: sycl-link command failed with exit code 1 (use -v to see invocation)
